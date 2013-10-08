@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0E0EA17F880AD00D6D680 /* SettingVC.m */; };
+		FEF208C817FF98A400315584 /* MessageData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = FEF208C717FF98A400315584 /* MessageData.geojson */; };
+		FEFCFD7217F1025100881C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7117F1025100881C24 /* Foundation.framework */; };
+		FEFCFD7417F1025100881C24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7317F1025100881C24 /* CoreGraphics.framework */; };
+		FEFCFD7617F1025100881C24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7517F1025100881C24 /* UIKit.framework */; };
+		FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD7A17F1025100881C24 /* InfoPlist.strings */; };
+		FEFCFD7E17F1025100881C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD7D17F1025100881C24 /* main.m */; };
+		FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8117F1025100881C24 /* AppDelegate.m */; };
+		FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD8317F1025100881C24 /* Main.storyboard */; };
+		FEFCFD8817F1025100881C24 /* MessageListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8717F1025100881C24 /* MessageListVC.m */; };
+		FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8A17F1025100881C24 /* FriendListVC.m */; };
+		FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD8C17F1025100881C24 /* Images.xcassets */; };
+		FEFCFD9417F1025100881C24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD9317F1025100881C24 /* XCTest.framework */; };
+		FEFCFD9517F1025100881C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7117F1025100881C24 /* Foundation.framework */; };
+		FEFCFD9617F1025100881C24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7517F1025100881C24 /* UIKit.framework */; };
+		FEFCFD9E17F1025100881C24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD9C17F1025100881C24 /* InfoPlist.strings */; };
+		FEFCFDA017F1025100881C24 /* DVUsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD9F17F1025100881C24 /* DVUsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEFCFD9717F1025100881C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEFCFD6617F1025100881C24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFCFD6D17F1025100881C24;
+			remoteInfo = DVUs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEF0E0E917F880AD00D6D680 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		FEF0E0EA17F880AD00D6D680 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		FEF208C717FF98A400315584 /* MessageData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageData.geojson; sourceTree = "<group>"; };
+		FEFCFD6E17F1025100881C24 /* DVUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFCFD7117F1025100881C24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEFCFD7317F1025100881C24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEFCFD7517F1025100881C24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEFCFD7917F1025100881C24 /* DVUs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DVUs-Info.plist"; sourceTree = "<group>"; };
+		FEFCFD7B17F1025100881C24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFCFD7D17F1025100881C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFCFD7F17F1025100881C24 /* DVUs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVUs-Prefix.pch"; sourceTree = "<group>"; };
+		FEFCFD8017F1025100881C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEFCFD8117F1025100881C24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEFCFD8417F1025100881C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEFCFD8617F1025100881C24 /* MessageListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageListVC.h; sourceTree = "<group>"; };
+		FEFCFD8717F1025100881C24 /* MessageListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageListVC.m; sourceTree = "<group>"; };
+		FEFCFD8917F1025100881C24 /* FriendListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendListVC.h; sourceTree = "<group>"; };
+		FEFCFD8A17F1025100881C24 /* FriendListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListVC.m; sourceTree = "<group>"; };
+		FEFCFD8C17F1025100881C24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEFCFD9217F1025100881C24 /* DVUsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVUsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFCFD9317F1025100881C24 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FEFCFD9B17F1025100881C24 /* DVUsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DVUsTests-Info.plist"; sourceTree = "<group>"; };
+		FEFCFD9D17F1025100881C24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFCFD9F17F1025100881C24 /* DVUsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVUsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFCFD6B17F1025100881C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFCFD7417F1025100881C24 /* CoreGraphics.framework in Frameworks */,
+				FEFCFD7617F1025100881C24 /* UIKit.framework in Frameworks */,
+				FEFCFD7217F1025100881C24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFCFD8F17F1025100881C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFCFD9417F1025100881C24 /* XCTest.framework in Frameworks */,
+				FEFCFD9617F1025100881C24 /* UIKit.framework in Frameworks */,
+				FEFCFD9517F1025100881C24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED221F317FD0432002E6708 /* messageList */ = {
+			isa = PBXGroup;
+			children = (
+				FEF208C717FF98A400315584 /* MessageData.geojson */,
+			);
+			name = messageList;
+			sourceTree = "<group>";
+		};
+		FEF0E0E817F8805700D6D680 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FED221F317FD0432002E6708 /* messageList */,
+				FEFCFD8317F1025100881C24 /* Main.storyboard */,
+				FEFCFD8617F1025100881C24 /* MessageListVC.h */,
+				FEFCFD8717F1025100881C24 /* MessageListVC.m */,
+				FEFCFD8917F1025100881C24 /* FriendListVC.h */,
+				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
+				FEF0E0E917F880AD00D6D680 /* SettingVC.h */,
+				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FEFCFD6517F1025000881C24 = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD7717F1025100881C24 /* DVUs */,
+				FEFCFD9917F1025100881C24 /* DVUsTests */,
+				FEFCFD7017F1025100881C24 /* Frameworks */,
+				FEFCFD6F17F1025100881C24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFCFD6F17F1025100881C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD6E17F1025100881C24 /* DVUs.app */,
+				FEFCFD9217F1025100881C24 /* DVUsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFCFD7017F1025100881C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD7117F1025100881C24 /* Foundation.framework */,
+				FEFCFD7317F1025100881C24 /* CoreGraphics.framework */,
+				FEFCFD7517F1025100881C24 /* UIKit.framework */,
+				FEFCFD9317F1025100881C24 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFCFD7717F1025100881C24 /* DVUs */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0E0E817F8805700D6D680 /* UI */,
+				FEFCFD8017F1025100881C24 /* AppDelegate.h */,
+				FEFCFD8117F1025100881C24 /* AppDelegate.m */,
+				FEFCFD8C17F1025100881C24 /* Images.xcassets */,
+				FEFCFD7817F1025100881C24 /* Supporting Files */,
+			);
+			path = DVUs;
+			sourceTree = "<group>";
+		};
+		FEFCFD7817F1025100881C24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD7917F1025100881C24 /* DVUs-Info.plist */,
+				FEFCFD7A17F1025100881C24 /* InfoPlist.strings */,
+				FEFCFD7D17F1025100881C24 /* main.m */,
+				FEFCFD7F17F1025100881C24 /* DVUs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFCFD9917F1025100881C24 /* DVUsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD9F17F1025100881C24 /* DVUsTests.m */,
+				FEFCFD9A17F1025100881C24 /* Supporting Files */,
+			);
+			path = DVUsTests;
+			sourceTree = "<group>";
+		};
+		FEFCFD9A17F1025100881C24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD9B17F1025100881C24 /* DVUsTests-Info.plist */,
+				FEFCFD9C17F1025100881C24 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFCFD6D17F1025100881C24 /* DVUs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFCFDA317F1025100881C24 /* Build configuration list for PBXNativeTarget "DVUs" */;
+			buildPhases = (
+				FEFCFD6A17F1025100881C24 /* Sources */,
+				FEFCFD6B17F1025100881C24 /* Frameworks */,
+				FEFCFD6C17F1025100881C24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DVUs;
+			productName = DVUs;
+			productReference = FEFCFD6E17F1025100881C24 /* DVUs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFCFD9117F1025100881C24 /* DVUsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFCFDA617F1025100881C24 /* Build configuration list for PBXNativeTarget "DVUsTests" */;
+			buildPhases = (
+				FEFCFD8E17F1025100881C24 /* Sources */,
+				FEFCFD8F17F1025100881C24 /* Frameworks */,
+				FEFCFD9017F1025100881C24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFCFD9817F1025100881C24 /* PBXTargetDependency */,
+			);
+			name = DVUsTests;
+			productName = DVUsTests;
+			productReference = FEFCFD9217F1025100881C24 /* DVUsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFCFD6617F1025100881C24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "pan Shiyu";
+				TargetAttributes = {
+					FEFCFD9117F1025100881C24 = {
+						TestTargetID = FEFCFD6D17F1025100881C24;
+					};
+				};
+			};
+			buildConfigurationList = FEFCFD6917F1025100881C24 /* Build configuration list for PBXProject "DVUs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEFCFD6517F1025000881C24;
+			productRefGroup = FEFCFD6F17F1025100881C24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFCFD6D17F1025100881C24 /* DVUs */,
+				FEFCFD9117F1025100881C24 /* DVUsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEFCFD6C17F1025100881C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
+				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
+				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
+				FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFCFD9017F1025100881C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFCFD9E17F1025100881C24 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFCFD6A17F1025100881C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */,
+				FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */,
+				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
+				FEFCFD8817F1025100881C24 /* MessageListVC.m in Sources */,
+				FEFCFD7E17F1025100881C24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFCFD8E17F1025100881C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFCFDA017F1025100881C24 /* DVUsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFCFD9817F1025100881C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEFCFD6D17F1025100881C24 /* DVUs */;
+			targetProxy = FEFCFD9717F1025100881C24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEFCFD7A17F1025100881C24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFCFD7B17F1025100881C24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEFCFD8317F1025100881C24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFCFD8417F1025100881C24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEFCFD9C17F1025100881C24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFCFD9D17F1025100881C24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEFCFDA117F1025100881C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEFCFDA217F1025100881C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEFCFDA417F1025100881C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
+				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEFCFDA517F1025100881C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
+				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEFCFDA717F1025100881C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DVUs.app/DVUs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DVUsTests/DVUsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FEFCFDA817F1025100881C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DVUs.app/DVUs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
+				INFOPLIST_FILE = "DVUsTests/DVUsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFCFD6917F1025100881C24 /* Build configuration list for PBXProject "DVUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFCFDA117F1025100881C24 /* Debug */,
+				FEFCFDA217F1025100881C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFCFDA317F1025100881C24 /* Build configuration list for PBXNativeTarget "DVUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFCFDA417F1025100881C24 /* Debug */,
+				FEFCFDA517F1025100881C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFCFDA617F1025100881C24 /* Build configuration list for PBXNativeTarget "DVUsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFCFDA717F1025100881C24 /* Debug */,
+				FEFCFDA817F1025100881C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEFCFD6617F1025100881C24 /* Project object */;
+}

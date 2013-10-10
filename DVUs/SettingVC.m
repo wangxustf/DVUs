@@ -8,7 +8,9 @@
 
 #import "SettingVC.h"
 
-@implementation SettingVC
+@implementation SettingVC{
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class DVMessage;
 @interface DataCenter : NSObject
 @property (nonatomic,strong)NSMutableArray *undoList;
 @property (nonatomic,strong)NSMutableArray *doneList;
+
+@property (nonatomic,strong)NSMutableArray *friendList;
+
+@property (nonatomic,weak)DVMessage *activeMessage;
 
 +(DataCenter*)sharedDataCenter;
 
@@ -27,9 +32,21 @@
 @property (nonatomic,strong)NSString *timeStr;
 @property (nonatomic,assign)BOOL isDone;
 
+@property (nonatomic,strong)NSMutableArray *friendList;
+
 - (id)initWithTitle:(NSString*)title content:(NSString*)content time:(NSDate*)time;
 
 + (id)fakeMessage:(BOOL)isDone;
-
++ (id)emptyMessage;
 @end
 
+
+@interface DVFriend : NSObject
+
+@property (nonatomic,strong)NSString *name;
+@property (nonatomic,strong)NSString *faceImage;
+@property (nonatomic,strong)NSArray *strsArray;
+
++ (id)fakeFriendRandomly;
+
+@end

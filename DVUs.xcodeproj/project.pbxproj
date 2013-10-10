@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE38B7F118070DBE00614EA1 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EE18070DBE00614EA1 /* face1.png */; };
+		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
+		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
 		FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF161805BAC000DCEF1B /* DataCenter.m */; };
 		FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */; };
 		FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE38B7EE18070DBE00614EA1 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
+		FE38B7EF18070DBE00614EA1 /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
+		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
 		FEE3FF151805BAC000DCEF1B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		FEE3FF161805BAC000DCEF1B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		FEE3FF1918061BB500DCEF1B /* CMCommonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommonCategory.h; sourceTree = "<group>"; };
@@ -213,6 +219,9 @@
 		FEFCFD7817F1025100881C24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE38B7EE18070DBE00614EA1 /* face1.png */,
+				FE38B7EF18070DBE00614EA1 /* face2.png */,
+				FE38B7F018070DBE00614EA1 /* face3.png */,
 				FEFCFD7917F1025100881C24 /* DVUs-Info.plist */,
 				FEFCFD7A17F1025100881C24 /* InfoPlist.strings */,
 				FEFCFD7D17F1025100881C24 /* main.m */,
@@ -286,6 +295,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "pan Shiyu";
 				TargetAttributes = {
+					FEFCFD6D17F1025100881C24 = {
+						DevelopmentTeam = T3ZLXP4K5B;
+					};
 					FEFCFD9117F1025100881C24 = {
 						TestTargetID = FEFCFD6D17F1025100881C24;
 					};
@@ -318,7 +330,10 @@
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
 				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
+				FE38B7F218070DBE00614EA1 /* face2.png in Resources */,
+				FE38B7F118070DBE00614EA1 /* face1.png in Resources */,
 				FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */,
+				FE38B7F318070DBE00614EA1 /* face3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
 				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";
@@ -489,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
 				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";

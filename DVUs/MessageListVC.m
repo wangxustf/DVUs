@@ -7,6 +7,7 @@
 //
 
 #import "MessageListVC.h"
+#import "MessageEditVC.h"
 
 @implementation MessageListVC
 
@@ -25,6 +26,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [_msgList reloadData];
     
 }
 
@@ -56,7 +58,7 @@
         ((UndoMsgTableCell*)tmpCell).refMessage = tmpMessage;
     } else {
         cellIdentifier = @"DoneMsgTableCell";
-        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+        tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
         
         tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (!tmpCell) {
@@ -69,20 +71,32 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    DVRequest *tmpRequest = [[DataCenter sharedDataCenter].requestList objectAtIndex:indexPath.row];
-//    
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-//    ACTDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"PageCreateRequest"];
-//    
-//    vc.outRequest = tmpRequest;
-//    
-//    [self presentViewController:vc animated:YES completion:^{
-//        
-//    }];
+    DVMessage *tmpMessage = nil;
+    if (indexPath.section == 0) {
+        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+    } else {
+        tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
+    }
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MessageEditVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+    
+    vc.outMessage = tmpMessage;
+    
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
 }
 
 
-
+- (IBAction)onAdd {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+    
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+}
 
 @end
 

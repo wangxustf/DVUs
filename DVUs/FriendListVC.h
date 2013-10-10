@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataCenter.h"
 
-@interface FriendListVC : UIViewController
+@interface FriendListVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong)IBOutlet UITableView *friendList;
+
+@property (nonatomic,assign) BOOL isModeAddFriend;
+
+@end
+
+
+@interface FriendTableCell : UITableViewCell
+
+@property (nonatomic,weak)DVFriend *refFriend;
+@property (nonatomic,strong)IBOutlet UILabel *nameLabel;
+@property (nonatomic,strong)IBOutlet UIImageView *faceImageview;
 
 @end

@@ -10,6 +10,7 @@
 		FE38B7F118070DBE00614EA1 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EE18070DBE00614EA1 /* face1.png */; };
 		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
 		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
+		FE38B7F518071F8600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F418071F8600614EA1 /* README */; };
 		FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF161805BAC000DCEF1B /* DataCenter.m */; };
 		FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */; };
 		FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */; };
@@ -51,6 +52,7 @@
 		FE38B7EE18070DBE00614EA1 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		FE38B7EF18070DBE00614EA1 /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
 		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
+		FE38B7F418071F8600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FEE3FF151805BAC000DCEF1B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		FEE3FF161805BAC000DCEF1B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		FEE3FF1918061BB500DCEF1B /* CMCommonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommonCategory.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				FEFCFD8117F1025100881C24 /* AppDelegate.m */,
 				FEFCFD8C17F1025100881C24 /* Images.xcassets */,
 				FEFCFD7817F1025100881C24 /* Supporting Files */,
+				FE38B7F418071F8600614EA1 /* README */,
 			);
 			path = DVUs;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
 				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
 				FE38B7F218070DBE00614EA1 /* face2.png in Resources */,
+				FE38B7F518071F8600614EA1 /* README in Resources */,
 				FE38B7F118070DBE00614EA1 /* face1.png in Resources */,
 				FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */,
 				FE38B7F318070DBE00614EA1 /* face3.png in Resources */,

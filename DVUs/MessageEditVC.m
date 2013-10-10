@@ -58,6 +58,7 @@
 #pragma mark - methods
 
 - (IBAction)onBack {
+    [DataCenter sharedDataCenter].activeMessage = nil;
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
@@ -70,7 +71,6 @@
     } else {
         [[DataCenter sharedDataCenter].undoList addObject:_newMessage];
     }
-    
     [self onBack];
 }
 

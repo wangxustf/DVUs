@@ -1,14 +1,18 @@
 //
-//  SettingVC.m
+//  MessageEditVC.m
 //  DVUs
 //
-//  Created by pan Shiyu on 13-9-29.
+//  Created by pan Shiyu on 13-10-10.
 //  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
-#import "SettingVC.h"
+#import "MessageEditVC.h"
 
-@implementation SettingVC
+@interface MessageEditVC ()
+
+@end
+
+@implementation MessageEditVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

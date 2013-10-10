@@ -8,10 +8,6 @@
 
 #import "MessageListVC.h"
 
-@interface MessageListVC ()
-
-@end
-
 @implementation MessageListVC
 
 - (void)viewDidLoad
@@ -26,9 +22,94 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) dosomething {
-    int a = 0;
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) { // undo
+        return [DataCenter sharedDataCenter].undoList.count;
+    } else {
+        return [DataCenter sharedDataCenter].doneList.count;
+    }
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *tmpCell = nil;
+    static NSString *cellIdentifier = @"DoneMsgTableCell";
+    DVMessage *tmpMessage = nil;
+    if (indexPath.section == 0) {
+        cellIdentifier = @"UndoMsgTableCell";
+        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+        
+        tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (!tmpCell) {
+            tmpCell = [[UndoMsgTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        ((UndoMsgTableCell*)tmpCell).refMessage = tmpMessage;
+    } else {
+        cellIdentifier = @"DoneMsgTableCell";
+        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+        
+        tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (!tmpCell) {
+            tmpCell = [[DoneMsgTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        ((DoneMsgTableCell*)tmpCell).refMessage = tmpMessage;
+    }
+    
+    return tmpCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    DVRequest *tmpRequest = [[DataCenter sharedDataCenter].requestList objectAtIndex:indexPath.row];
+//    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    ACTDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"PageCreateRequest"];
+//    
+//    vc.outRequest = tmpRequest;
+//    
+//    [self presentViewController:vc animated:YES completion:^{
+//        
+//    }];
+}
+
+
+
+
+@end
+
+#pragma mark - format data -----------------------------
+
+@implementation DoneMsgTableCell
+
+- (void)setRefMessage:(DVMessage *)refMessage {
+    _refMessage = refMessage;
+    
+    if (_refMessage) {
+        _timeLabel.text = _refMessage.timeStr;
+        _infoLabel.text = _refMessage.title;
+    }
+}
+
+@end
+
+@implementation UndoMsgTableCell
+
+- (void)setRefMessage:(DVMessage *)refMessage {
+    _refMessage = refMessage;
+    
+    if (_refMessage) {
+        self.timeLabel.text = _refMessage.timeStr;
+        self.infoLabel.text = _refMessage.title;
+    }
 }
 
 @end

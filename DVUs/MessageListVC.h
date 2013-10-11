@@ -7,16 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataCenter.h"
 
-@interface MessageListVC : UIViewController
+@interface MessageListVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong)IBOutlet UITableView *msgList;
+
+- (IBAction)onAdd;
+
 
 @end
 
 
 #pragma mark - message cell
 
-@interface MessageTableViewCell : UITableViewCell
+@interface DoneMsgTableCell : UITableViewCell
+@property (nonatomic,weak)DVMessage *refMessage;
+@property (nonatomic,strong)IBOutlet UILabel *infoLabel;
+@property (nonatomic,strong)IBOutlet UILabel *timeLabel;
 
-//@property (nonatomic,strong)UILabel *
+
+@end
+
+@interface UndoMsgTableCell : UITableViewCell
+
+@property (nonatomic,weak)DVMessage *refMessage;
+
+@property (nonatomic,strong)IBOutlet UILabel *timeLabel;
+@property (nonatomic,strong)IBOutlet UILabel *infoLabel;
 
 @end

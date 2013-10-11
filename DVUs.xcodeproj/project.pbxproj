@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE38B7F118070DBE00614EA1 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EE18070DBE00614EA1 /* face1.png */; };
+		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
+		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
+		FE38B7F71807208600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F61807208600614EA1 /* README */; };
+		FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF161805BAC000DCEF1B /* DataCenter.m */; };
+		FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */; };
+		FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */; };
+		FEE3FF2818061BB500DCEF1B /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1F18061BB500DCEF1B /* UIDeviceAdditions.m */; };
+		FEE3FF2918061BB500DCEF1B /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2118061BB500DCEF1B /* UIFontAdditions.m */; };
+		FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2318061BB500DCEF1B /* UIViewAdditions.m */; };
+		FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2518061BB500DCEF1B /* UIViewControllerAdditions.m */; };
+		FEE3FF2E18062FA200DCEF1B /* MessageEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2D18062FA200DCEF1B /* MessageEditVC.m */; };
 		FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0E0EA17F880AD00D6D680 /* SettingVC.m */; };
 		FEF208C817FF98A400315584 /* MessageData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = FEF208C717FF98A400315584 /* MessageData.geojson */; };
 		FEFCFD7217F1025100881C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7117F1025100881C24 /* Foundation.framework */; };
@@ -37,6 +49,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE38B7EE18070DBE00614EA1 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
+		FE38B7EF18070DBE00614EA1 /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
+		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
+		FE38B7F61807208600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FE38B7F81807231600614EA1 /* DVUs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVUs.entitlements; sourceTree = "<group>"; };
+		FEE3FF151805BAC000DCEF1B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		FEE3FF161805BAC000DCEF1B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		FEE3FF1918061BB500DCEF1B /* CMCommonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommonCategory.h; sourceTree = "<group>"; };
+		FEE3FF1A18061BB500DCEF1B /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		FEE3FF1C18061BB500DCEF1B /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		FEE3FF1E18061BB500DCEF1B /* UIDeviceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceAdditions.h; sourceTree = "<group>"; };
+		FEE3FF1F18061BB500DCEF1B /* UIDeviceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceAdditions.m; sourceTree = "<group>"; };
+		FEE3FF2018061BB500DCEF1B /* UIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontAdditions.h; sourceTree = "<group>"; };
+		FEE3FF2118061BB500DCEF1B /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontAdditions.m; sourceTree = "<group>"; };
+		FEE3FF2218061BB500DCEF1B /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		FEE3FF2318061BB500DCEF1B /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		FEE3FF2418061BB500DCEF1B /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerAdditions.h; sourceTree = "<group>"; };
+		FEE3FF2518061BB500DCEF1B /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerAdditions.m; sourceTree = "<group>"; };
+		FEE3FF2C18062FA200DCEF1B /* MessageEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageEditVC.h; sourceTree = "<group>"; };
+		FEE3FF2D18062FA200DCEF1B /* MessageEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageEditVC.m; sourceTree = "<group>"; };
 		FEF0E0E917F880AD00D6D680 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		FEF0E0EA17F880AD00D6D680 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		FEF208C717FF98A400315584 /* MessageData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageData.geojson; sourceTree = "<group>"; };
@@ -95,6 +129,35 @@
 			name = messageList;
 			sourceTree = "<group>";
 		};
+		FEE3FF141805BAA700DCEF1B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FEE3FF151805BAC000DCEF1B /* DataCenter.h */,
+				FEE3FF161805BAC000DCEF1B /* DataCenter.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		FEE3FF1818061BB500DCEF1B /* category */ = {
+			isa = PBXGroup;
+			children = (
+				FEE3FF1918061BB500DCEF1B /* CMCommonCategory.h */,
+				FEE3FF1A18061BB500DCEF1B /* NSDateAdditions.h */,
+				FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */,
+				FEE3FF1C18061BB500DCEF1B /* NSStringAdditions.h */,
+				FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */,
+				FEE3FF1E18061BB500DCEF1B /* UIDeviceAdditions.h */,
+				FEE3FF1F18061BB500DCEF1B /* UIDeviceAdditions.m */,
+				FEE3FF2018061BB500DCEF1B /* UIFontAdditions.h */,
+				FEE3FF2118061BB500DCEF1B /* UIFontAdditions.m */,
+				FEE3FF2218061BB500DCEF1B /* UIViewAdditions.h */,
+				FEE3FF2318061BB500DCEF1B /* UIViewAdditions.m */,
+				FEE3FF2418061BB500DCEF1B /* UIViewControllerAdditions.h */,
+				FEE3FF2518061BB500DCEF1B /* UIViewControllerAdditions.m */,
+			);
+			path = category;
+			sourceTree = SOURCE_ROOT;
+		};
 		FEF0E0E817F8805700D6D680 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +169,8 @@
 				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
 				FEF0E0E917F880AD00D6D680 /* SettingVC.h */,
 				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
+				FEE3FF2C18062FA200DCEF1B /* MessageEditVC.h */,
+				FEE3FF2D18062FA200DCEF1B /* MessageEditVC.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -113,6 +178,7 @@
 		FEFCFD6517F1025000881C24 = {
 			isa = PBXGroup;
 			children = (
+				FE38B7F61807208600614EA1 /* README */,
 				FEFCFD7717F1025100881C24 /* DVUs */,
 				FEFCFD9917F1025100881C24 /* DVUsTests */,
 				FEFCFD7017F1025100881C24 /* Frameworks */,
@@ -143,6 +209,9 @@
 		FEFCFD7717F1025100881C24 /* DVUs */ = {
 			isa = PBXGroup;
 			children = (
+				FE38B7F81807231600614EA1 /* DVUs.entitlements */,
+				FEE3FF1818061BB500DCEF1B /* category */,
+				FEE3FF141805BAA700DCEF1B /* data */,
 				FEF0E0E817F8805700D6D680 /* UI */,
 				FEFCFD8017F1025100881C24 /* AppDelegate.h */,
 				FEFCFD8117F1025100881C24 /* AppDelegate.m */,
@@ -155,6 +224,9 @@
 		FEFCFD7817F1025100881C24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE38B7EE18070DBE00614EA1 /* face1.png */,
+				FE38B7EF18070DBE00614EA1 /* face2.png */,
+				FE38B7F018070DBE00614EA1 /* face3.png */,
 				FEFCFD7917F1025100881C24 /* DVUs-Info.plist */,
 				FEFCFD7A17F1025100881C24 /* InfoPlist.strings */,
 				FEFCFD7D17F1025100881C24 /* main.m */,
@@ -228,6 +300,20 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "pan Shiyu";
 				TargetAttributes = {
+					FEFCFD6D17F1025100881C24 = {
+						DevelopmentTeam = T3ZLXP4K5B;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
 					FEFCFD9117F1025100881C24 = {
 						TestTargetID = FEFCFD6D17F1025100881C24;
 					};
@@ -260,7 +346,11 @@
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
 				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
+				FE38B7F218070DBE00614EA1 /* face2.png in Resources */,
+				FE38B7F71807208600614EA1 /* README in Resources */,
+				FE38B7F118070DBE00614EA1 /* face1.png in Resources */,
 				FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */,
+				FE38B7F318070DBE00614EA1 /* face3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +370,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */,
+				FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */,
+				FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */,
 				FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */,
+				FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */,
 				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
+				FEE3FF2918061BB500DCEF1B /* UIFontAdditions.m in Sources */,
 				FEFCFD8817F1025100881C24 /* MessageListVC.m in Sources */,
+				FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */,
+				FEE3FF2E18062FA200DCEF1B /* MessageEditVC.m in Sources */,
+				FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */,
 				FEFCFD7E17F1025100881C24 /* main.m in Sources */,
+				FEE3FF2818061BB500DCEF1B /* UIDeviceAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,10 +508,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
 				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,10 +525,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVUs/DVUs-Prefix.pch";
 				INFOPLIST_FILE = "DVUs/DVUs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

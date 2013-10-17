@@ -83,9 +83,11 @@
     
     vc.outMessage = tmpMessage;
     
-    [self presentViewController:vc animated:YES completion:^{
-        
-    }];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+//    [self presentViewController:vc animated:YES completion:^{
+//        
+//    }];
 }
 
 

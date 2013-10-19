@@ -47,7 +47,7 @@
         _titleTextfield.text = _outMessage.title;
         _contentTextview.text = _outMessage.content;
         _timeLabel.text = [_outMessage.time yyyyMMdd];
-    }else {
+    }else if(!_newMessage){
         _newMessage = [DVMessage emptyMessage];
         _timeLabel.text = [_newMessage.time yyyyMMdd];
     }
@@ -59,9 +59,10 @@
 
 - (IBAction)onBack {
     [DataCenter sharedDataCenter].activeMessage = nil;
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self.navigationController popViewControllerAnimated:YES];
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        
+//    }];
 }
 - (IBAction)onUpdate {
     if (_outMessage) {
@@ -83,9 +84,9 @@
     DVMessage *currentMessage = _outMessage ? _outMessage : _newMessage;
     [DataCenter sharedDataCenter].activeMessage = currentMessage;
     
-    [self presentViewController:vc animated:YES completion:^{
-        
-    }];
+    vc.refMessage = currentMessage;
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)onValueChanged:(UISlider*)sender {

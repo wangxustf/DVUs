@@ -15,6 +15,8 @@
 
 @property (nonatomic,assign) BOOL isModeAddFriend;
 
+@property (nonatomic,strong)DVMessage *refMessage;
+
 @end
 
 

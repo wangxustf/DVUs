@@ -32,9 +32,7 @@
 }
 
 - (void) onBack {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - 
@@ -61,10 +59,15 @@
     if (!_isModeAddFriend) {
         [_friendList reloadData];
     } else {
-        if ([DataCenter sharedDataCenter].activeMessage) {
+//        if ([DataCenter sharedDataCenter].activeMessage) {
+//            DVFriend *tmpFriend = [[DataCenter sharedDataCenter].friendList objectAtIndex:indexPath.row];
+//            [[DataCenter sharedDataCenter].activeMessage.friendList addObject:tmpFriend];
+//        }
+        if (_refMessage) {
             DVFriend *tmpFriend = [[DataCenter sharedDataCenter].friendList objectAtIndex:indexPath.row];
-            [[DataCenter sharedDataCenter].activeMessage.friendList addObject:tmpFriend];
+            [_refMessage.friendList addObject:tmpFriend];
         }
+        
         [self onBack];
     }
 }

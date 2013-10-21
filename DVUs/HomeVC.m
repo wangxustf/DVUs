@@ -7,6 +7,7 @@
 //
 
 #import "HomeVC.h"
+#import "DVBaseVC.h"
 
 @implementation HomeVC
 
@@ -35,6 +36,7 @@
 
 - (IBAction)onDate {
     NSLog(@"onDate");
+    [self performSegueWithIdentifier:@"sugueOnDate" sender:self];
 }
 
 - (IBAction)onShare {
@@ -48,5 +50,13 @@
 - (IBAction)onMessageList {
     NSLog(@"onMessageList");
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DVBaseVC *toVC = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"sugueOnDate"]) {
+        toVC.enableSwipeBack = YES;
+    }
+}
+
 
 @end

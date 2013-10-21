@@ -448,7 +448,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="numLabel" destination="BtN-ur-QXM" id="Vby-CS-pSz"/>
-                        <segue destination="CZ4-MO-1fc" kind="push" id="ZDp-d3-OG5"/>
+                        <segue destination="CZ4-MO-1fc" kind="push" identifier="sugueOnDate" id="ZDp-d3-OG5"/>
                         <segue destination="wBe-qQ-FmS" kind="push" id="YnI-cM-WjJ"/>
                         <segue destination="RbD-ax-2aM" kind="push" id="iUu-dC-pFT"/>
                     </connections>

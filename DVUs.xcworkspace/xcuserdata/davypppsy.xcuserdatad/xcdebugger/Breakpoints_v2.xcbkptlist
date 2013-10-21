@@ -9,7 +9,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DVUs/MessageEditVC.m"
+            filePath = "DVUs/ActivityEditVC.m"
             timestampString = "403849264.71514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

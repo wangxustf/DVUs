@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class DVMessage;
+@class DVActivity;
 @interface DataCenter : NSObject
 @property (nonatomic,strong)NSMutableArray *undoList;
 @property (nonatomic,strong)NSMutableArray *doneList;
 
 @property (nonatomic,strong)NSMutableArray *friendList;
 
-@property (nonatomic,weak)DVMessage *activeMessage;
+@property (nonatomic,weak)DVActivity *activeMessage;
 
 +(DataCenter*)sharedDataCenter;
 
@@ -24,7 +24,7 @@
 
 #pragma mark - 数据单元
 
-@interface DVMessage : NSObject
+@interface DVActivity : NSObject
 
 @property (nonatomic,strong)NSString *title;
 @property (nonatomic,strong)NSString *content;
@@ -50,3 +50,15 @@
 + (id)fakeFriendRandomly;
 
 @end
+
+
+//@interface DVActivity : NSObject
+//
+//@property (nonatomic,copy)NSString *title;
+//@property (nonatomic,strong)NSString *content;
+//@property (nonatomic,strong)NSDate *time;
+//
+//@end
+
+
+

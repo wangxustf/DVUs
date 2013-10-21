@@ -6,10 +6,10 @@
 //  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
-#import "MessageListVC.h"
-#import "MessageEditVC.h"
+#import "ActivityListVC.h"
+#import "ActivityEditVC.h"
 
-@implementation MessageListVC
+@implementation ActivityListVC
 
 - (void)viewDidLoad
 {
@@ -46,7 +46,7 @@
     
     UITableViewCell *tmpCell = nil;
     static NSString *cellIdentifier = @"DoneMsgTableCell";
-    DVMessage *tmpMessage = nil;
+    DVActivity *tmpMessage = nil;
     if (indexPath.section == 0) {
         cellIdentifier = @"UndoMsgTableCell";
         tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
@@ -71,7 +71,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DVMessage *tmpMessage = nil;
+    DVActivity *tmpMessage = nil;
     if (indexPath.section == 0) {
         tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
     } else {
@@ -79,7 +79,7 @@
     }
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MessageEditVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+    ActivityEditVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
     
     vc.outMessage = tmpMessage;
     
@@ -105,7 +105,7 @@
 
 @implementation DoneMsgTableCell
 
-- (void)setRefMessage:(DVMessage *)refMessage {
+- (void)setRefMessage:(DVActivity *)refMessage {
     _refMessage = refMessage;
     
     if (_refMessage) {
@@ -118,7 +118,7 @@
 
 @implementation UndoMsgTableCell
 
-- (void)setRefMessage:(DVMessage *)refMessage {
+- (void)setRefMessage:(DVActivity *)refMessage {
     _refMessage = refMessage;
     
     if (_refMessage) {

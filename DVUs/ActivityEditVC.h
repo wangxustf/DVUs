@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
 
-@interface MessageEditVC : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ActivityEditVC : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic,strong)IBOutlet UITextField *titleTextfield;
 @property (nonatomic,strong)IBOutlet UITextView *contentTextview;
 @property (nonatomic,strong)IBOutlet UILabel *timeLabel;
 @property (nonatomic,strong)IBOutlet UICollectionView *faceCollectionView;
 
-@property (nonatomic,strong) DVMessage *outMessage;
+@property (nonatomic,strong) DVActivity *outMessage;
 
 - (IBAction)onBack;
 - (IBAction)onUpdate;

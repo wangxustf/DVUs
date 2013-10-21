@@ -6,13 +6,13 @@
 //  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
-#import "MessageEditVC.h"
+#import "ActivityEditVC.h"
 #import "CMCommonCategory.h"
 #import "DataCenter.h"
 #import "FriendListVC.h"
 
-@implementation MessageEditVC {
-    DVMessage *_newMessage;
+@implementation ActivityEditVC {
+    DVActivity *_newMessage;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,7 +48,7 @@
         _contentTextview.text = _outMessage.content;
         _timeLabel.text = [_outMessage.time yyyyMMdd];
     }else if(!_newMessage){
-        _newMessage = [DVMessage emptyMessage];
+        _newMessage = [DVActivity emptyMessage];
         _timeLabel.text = [_newMessage.time yyyyMMdd];
     }
     
@@ -81,7 +81,7 @@
     
     vc.isModeAddFriend = YES;
     
-    DVMessage *currentMessage = _outMessage ? _outMessage : _newMessage;
+    DVActivity *currentMessage = _outMessage ? _outMessage : _newMessage;
     [DataCenter sharedDataCenter].activeMessage = currentMessage;
     
     vc.refMessage = currentMessage;
@@ -121,7 +121,7 @@
 #pragma mark - collections delegate
 //集合代理-每一部分数据项
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    DVMessage *currentMessage = _outMessage ? _outMessage : _newMessage;
+    DVActivity *currentMessage = _outMessage ? _outMessage : _newMessage;
     return currentMessage.friendList.count;
 }
 
@@ -131,7 +131,7 @@
 {
     NSString *cellIdentifier = @"FaceCell";
     FaceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    DVMessage *currentMessage = _outMessage ? _outMessage : _newMessage;
+    DVActivity *currentMessage = _outMessage ? _outMessage : _newMessage;
     cell.refFriend = [currentMessage.friendList objectAtIndex:indexPath.row];
     return cell;
 }

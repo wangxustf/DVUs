@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
 
-@interface MessageListVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ActivityListVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong)IBOutlet UITableView *msgList;
 
@@ -22,7 +22,7 @@
 #pragma mark - message cell
 
 @interface DoneMsgTableCell : UITableViewCell
-@property (nonatomic,weak)DVMessage *refMessage;
+@property (nonatomic,weak)DVActivity *refMessage;
 @property (nonatomic,strong)IBOutlet UILabel *infoLabel;
 @property (nonatomic,strong)IBOutlet UILabel *timeLabel;
 
@@ -31,7 +31,7 @@
 
 @interface UndoMsgTableCell : UITableViewCell
 
-@property (nonatomic,weak)DVMessage *refMessage;
+@property (nonatomic,weak)DVActivity *refMessage;
 
 @property (nonatomic,strong)IBOutlet UILabel *timeLabel;
 @property (nonatomic,strong)IBOutlet UILabel *infoLabel;

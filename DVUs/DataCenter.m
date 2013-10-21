@@ -28,8 +28,8 @@
         _friendList = [NSMutableArray array];
         
         ///fake data
-        [_doneList addObject:[DVMessage fakeMessage:YES]];
-        [_undoList addObject:[DVMessage fakeMessage:NO]];
+        [_doneList addObject:[DVActivity fakeMessage:YES]];
+        [_undoList addObject:[DVActivity fakeMessage:NO]];
         
         for (int i=0; i<10; i++) {
             DVFriend *tmpFriend = [DVFriend fakeFriendRandomly];
@@ -43,7 +43,7 @@
 @end
 
 
-@implementation DVMessage
+@implementation DVActivity
 
 - (id)initWithTitle:(NSString*)title content:(NSString*)content time:(NSDate*)time {
     self = [super init];
@@ -61,13 +61,13 @@
 
 + (id)fakeMessage:(BOOL)isDone {
     
-    DVMessage *newMsg = [[DVMessage alloc] initWithTitle:@"测试标题" content:@"testContent" time:[NSDate dateWithDaysFromNow:1]];
+    DVActivity *newMsg = [[DVActivity alloc] initWithTitle:@"测试标题" content:@"testContent" time:[NSDate dateWithDaysFromNow:1]];
     newMsg.isDone = isDone;
     return newMsg;
 }
 
 + (id)emptyMessage {
-    DVMessage *newMsg = [[DVMessage alloc] initWithTitle:@"" content:@"" time:[NSDate dateWithDaysFromNow:0]];
+    DVActivity *newMsg = [[DVActivity alloc] initWithTitle:@"" content:@"" time:[NSDate dateWithDaysFromNow:0]];
     newMsg.isDone = NO;
     return newMsg;
 }

@@ -12,6 +12,16 @@
 		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
 		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
 		FE38B7F71807208600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F61807208600614EA1 /* README */; };
+		FE7E437A181596DE00FE5DAC /* date_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E4379181596DE00FE5DAC /* date_bg.png */; };
+		FE7E437D18159C7300FE5DAC /* date_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E437B18159C7300FE5DAC /* date_btn@2x.png */; };
+		FE7E437E18159C7300FE5DAC /* share_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E437C18159C7300FE5DAC /* share_btn@2x.png */; };
+		FE7E438018159D1800FE5DAC /* set_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E437F18159D1800FE5DAC /* set_btn@2x.png */; };
+		FE7E438318159E1500FE5DAC /* btn_notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E438118159E1500FE5DAC /* btn_notice@2x.png */; };
+		FE7E438418159E1500FE5DAC /* icon_notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7E438218159E1500FE5DAC /* icon_notice@2x.png */; };
+		FE7E43871815A39100FE5DAC /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E43861815A39100FE5DAC /* HomeVC.m */; };
+		FE7E438E1815A61C00FE5DAC /* DVTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E438D1815A61C00FE5DAC /* DVTools.m */; };
+		FE7E43931815A64B00FE5DAC /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E43921815A64B00FE5DAC /* TKAlertCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE7E43971815ADC800FE5DAC /* DVBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E43961815ADC800FE5DAC /* DVBaseVC.m */; };
 		FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF161805BAC000DCEF1B /* DataCenter.m */; };
 		FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1B18061BB500DCEF1B /* NSDateAdditions.m */; };
 		FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF1D18061BB500DCEF1B /* NSStringAdditions.m */; };
@@ -29,7 +39,7 @@
 		FEFCFD7E17F1025100881C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD7D17F1025100881C24 /* main.m */; };
 		FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8117F1025100881C24 /* AppDelegate.m */; };
 		FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD8317F1025100881C24 /* Main.storyboard */; };
-		FEFCFD8817F1025100881C24 /* ActivityListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8717F1025100881C24 /* ActivityListVC.m */; };
+		FEFCFD8817F1025100881C24 /* MyActivityListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8717F1025100881C24 /* MyActivityListVC.m */; };
 		FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFCFD8A17F1025100881C24 /* FriendListVC.m */; };
 		FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFCFD8C17F1025100881C24 /* Images.xcassets */; };
 		FEFCFD9417F1025100881C24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD9317F1025100881C24 /* XCTest.framework */; };
@@ -57,6 +67,20 @@
 		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
 		FE38B7F61807208600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FE38B7F81807231600614EA1 /* DVUs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVUs.entitlements; sourceTree = "<group>"; };
+		FE7E4379181596DE00FE5DAC /* date_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_bg.png; sourceTree = "<group>"; };
+		FE7E437B18159C7300FE5DAC /* date_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date_btn@2x.png"; sourceTree = "<group>"; };
+		FE7E437C18159C7300FE5DAC /* share_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_btn@2x.png"; sourceTree = "<group>"; };
+		FE7E437F18159D1800FE5DAC /* set_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "set_btn@2x.png"; sourceTree = "<group>"; };
+		FE7E438118159E1500FE5DAC /* btn_notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_notice@2x.png"; sourceTree = "<group>"; };
+		FE7E438218159E1500FE5DAC /* icon_notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_notice@2x.png"; sourceTree = "<group>"; };
+		FE7E43851815A39100FE5DAC /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		FE7E43861815A39100FE5DAC /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		FE7E438C1815A61C00FE5DAC /* DVTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DVTools.h; path = ../category/DVTools.h; sourceTree = "<group>"; };
+		FE7E438D1815A61C00FE5DAC /* DVTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DVTools.m; path = ../category/DVTools.m; sourceTree = "<group>"; };
+		FE7E43911815A64B00FE5DAC /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		FE7E43921815A64B00FE5DAC /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		FE7E43951815ADC800FE5DAC /* DVBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseVC.h; sourceTree = "<group>"; };
+		FE7E43961815ADC800FE5DAC /* DVBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseVC.m; sourceTree = "<group>"; };
 		FEE3FF151805BAC000DCEF1B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		FEE3FF161805BAC000DCEF1B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		FEE3FF1918061BB500DCEF1B /* CMCommonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommonCategory.h; sourceTree = "<group>"; };
@@ -88,8 +112,8 @@
 		FEFCFD8017F1025100881C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEFCFD8117F1025100881C24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FEFCFD8417F1025100881C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FEFCFD8617F1025100881C24 /* ActivityListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityListVC.h; sourceTree = "<group>"; };
-		FEFCFD8717F1025100881C24 /* ActivityListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityListVC.m; sourceTree = "<group>"; };
+		FEFCFD8617F1025100881C24 /* MyActivityListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyActivityListVC.h; sourceTree = "<group>"; };
+		FEFCFD8717F1025100881C24 /* MyActivityListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyActivityListVC.m; sourceTree = "<group>"; };
 		FEFCFD8917F1025100881C24 /* FriendListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendListVC.h; sourceTree = "<group>"; };
 		FEFCFD8A17F1025100881C24 /* FriendListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListVC.m; sourceTree = "<group>"; };
 		FEFCFD8C17F1025100881C24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -125,6 +149,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE7E4378181596B500FE5DAC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E438118159E1500FE5DAC /* btn_notice@2x.png */,
+				FE7E438218159E1500FE5DAC /* icon_notice@2x.png */,
+				FE7E437F18159D1800FE5DAC /* set_btn@2x.png */,
+				FE7E437B18159C7300FE5DAC /* date_btn@2x.png */,
+				FE7E437C18159C7300FE5DAC /* share_btn@2x.png */,
+				FE7E4379181596DE00FE5DAC /* date_bg.png */,
+				FE38B7EE18070DBE00614EA1 /* face1.png */,
+				FE38B7EF18070DBE00614EA1 /* face2.png */,
+				FE38B7F018070DBE00614EA1 /* face3.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		FE7E438F1815A63F00FE5DAC /* thirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E43901815A64B00FE5DAC /* TKAlert */,
+			);
+			name = thirdPart;
+			sourceTree = "<group>";
+		};
+		FE7E43901815A64B00FE5DAC /* TKAlert */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E43911815A64B00FE5DAC /* TKAlertCenter.h */,
+				FE7E43921815A64B00FE5DAC /* TKAlertCenter.m */,
+			);
+			path = TKAlert;
+			sourceTree = "<group>";
+		};
+		FE7E43941815ADB800FE5DAC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E438C1815A61C00FE5DAC /* DVTools.h */,
+				FE7E438D1815A61C00FE5DAC /* DVTools.m */,
+				FE7E43951815ADC800FE5DAC /* DVBaseVC.h */,
+				FE7E43961815ADC800FE5DAC /* DVBaseVC.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		FED221F317FD0432002E6708 /* messageList */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,14 +242,16 @@
 			children = (
 				FED221F317FD0432002E6708 /* messageList */,
 				FEFCFD8317F1025100881C24 /* Main.storyboard */,
-				FEFCFD8617F1025100881C24 /* ActivityListVC.h */,
-				FEFCFD8717F1025100881C24 /* ActivityListVC.m */,
+				FEFCFD8617F1025100881C24 /* MyActivityListVC.h */,
+				FEFCFD8717F1025100881C24 /* MyActivityListVC.m */,
 				FEFCFD8917F1025100881C24 /* FriendListVC.h */,
 				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
 				FEF0E0E917F880AD00D6D680 /* SettingVC.h */,
 				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
 				FEE3FF2C18062FA200DCEF1B /* ActivityEditVC.h */,
 				FEE3FF2D18062FA200DCEF1B /* ActivityEditVC.m */,
+				FE7E43851815A39100FE5DAC /* HomeVC.h */,
+				FE7E43861815A39100FE5DAC /* HomeVC.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -222,6 +292,9 @@
 		FEFCFD7717F1025100881C24 /* DVUs */ = {
 			isa = PBXGroup;
 			children = (
+				FE7E43941815ADB800FE5DAC /* Common */,
+				FE7E438F1815A63F00FE5DAC /* thirdPart */,
+				FE7E4378181596B500FE5DAC /* Resource */,
 				FEE1CB3B1814A5EE00AD755F /* Service */,
 				FE38B7F81807231600614EA1 /* DVUs.entitlements */,
 				FEE3FF1818061BB500DCEF1B /* category */,
@@ -238,9 +311,6 @@
 		FEFCFD7817F1025100881C24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE38B7EE18070DBE00614EA1 /* face1.png */,
-				FE38B7EF18070DBE00614EA1 /* face2.png */,
-				FE38B7F018070DBE00614EA1 /* face3.png */,
 				FEFCFD7917F1025100881C24 /* DVUs-Info.plist */,
 				FEFCFD7A17F1025100881C24 /* InfoPlist.strings */,
 				FEFCFD7D17F1025100881C24 /* main.m */,
@@ -359,12 +429,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7E438318159E1500FE5DAC /* btn_notice@2x.png in Resources */,
+				FE7E438418159E1500FE5DAC /* icon_notice@2x.png in Resources */,
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
 				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
+				FE7E437D18159C7300FE5DAC /* date_btn@2x.png in Resources */,
 				FE38B7F218070DBE00614EA1 /* face2.png in Resources */,
 				FE38B7F71807208600614EA1 /* README in Resources */,
+				FE7E438018159D1800FE5DAC /* set_btn@2x.png in Resources */,
+				FE7E437A181596DE00FE5DAC /* date_bg.png in Resources */,
 				FE38B7F118070DBE00614EA1 /* face1.png in Resources */,
+				FE7E437E18159C7300FE5DAC /* share_btn@2x.png in Resources */,
 				FEFCFD8517F1025100881C24 /* Main.storyboard in Resources */,
 				FE38B7F318070DBE00614EA1 /* face3.png in Resources */,
 			);
@@ -420,12 +496,16 @@
 			files = (
 				FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */,
 				FEE3FF2618061BB500DCEF1B /* NSDateAdditions.m in Sources */,
+				FE7E43931815A64B00FE5DAC /* TKAlertCenter.m in Sources */,
 				FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */,
+				FE7E43871815A39100FE5DAC /* HomeVC.m in Sources */,
 				FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */,
 				FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */,
+				FE7E438E1815A61C00FE5DAC /* DVTools.m in Sources */,
 				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
 				FEE3FF2918061BB500DCEF1B /* UIFontAdditions.m in Sources */,
-				FEFCFD8817F1025100881C24 /* ActivityListVC.m in Sources */,
+				FE7E43971815ADC800FE5DAC /* DVBaseVC.m in Sources */,
+				FEFCFD8817F1025100881C24 /* MyActivityListVC.m in Sources */,
 				FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */,
 				FEE3FF2E18062FA200DCEF1B /* ActivityEditVC.m in Sources */,
 				FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */,

@@ -8,20 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
+#import "DVBaseVC.h"
 
-@interface ActivityListVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface MyActivityListVC : DVBaseVC<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong)IBOutlet UITableView *msgList;
+@property (nonatomic,strong)IBOutlet UITableView *actList;
 
 - (IBAction)onAdd;
-
 
 @end
 
 
 #pragma mark - message cell
 
-@interface DoneMsgTableCell : UITableViewCell
+@interface DoneActTableCell : UITableViewCell
 @property (nonatomic,weak)DVActivity *refMessage;
 @property (nonatomic,strong)IBOutlet UILabel *infoLabel;
 @property (nonatomic,strong)IBOutlet UILabel *timeLabel;
@@ -29,7 +29,7 @@
 
 @end
 
-@interface UndoMsgTableCell : UITableViewCell
+@interface UndoActTableCell : UITableViewCell
 
 @property (nonatomic,weak)DVActivity *refMessage;
 

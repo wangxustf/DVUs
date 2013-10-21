@@ -6,10 +6,10 @@
 //  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
-#import "ActivityListVC.h"
+#import "MyActivityListVC.h"
 #import "ActivityEditVC.h"
 
-@implementation ActivityListVC
+@implementation MyActivityListVC
 
 - (void)viewDidLoad
 {
@@ -26,7 +26,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [_msgList reloadData];
+    [_actList reloadData];
     
 }
 
@@ -53,18 +53,18 @@
         
         tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (!tmpCell) {
-            tmpCell = [[UndoMsgTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+            tmpCell = [[UndoActTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
-        ((UndoMsgTableCell*)tmpCell).refMessage = tmpMessage;
+        ((UndoActTableCell*)tmpCell).refMessage = tmpMessage;
     } else {
         cellIdentifier = @"DoneMsgTableCell";
         tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
         
         tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (!tmpCell) {
-            tmpCell = [[DoneMsgTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+            tmpCell = [[DoneActTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
-        ((DoneMsgTableCell*)tmpCell).refMessage = tmpMessage;
+        ((DoneActTableCell*)tmpCell).refMessage = tmpMessage;
     }
     
     return tmpCell;
@@ -103,7 +103,7 @@
 
 #pragma mark - format data -----------------------------
 
-@implementation DoneMsgTableCell
+@implementation DoneActTableCell
 
 - (void)setRefMessage:(DVActivity *)refMessage {
     _refMessage = refMessage;
@@ -116,7 +116,7 @@
 
 @end
 
-@implementation UndoMsgTableCell
+@implementation UndoActTableCell
 
 - (void)setRefMessage:(DVActivity *)refMessage {
     _refMessage = refMessage;

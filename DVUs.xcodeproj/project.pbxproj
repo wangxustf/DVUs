@@ -29,7 +29,7 @@
 		FEE3FF2918061BB500DCEF1B /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2118061BB500DCEF1B /* UIFontAdditions.m */; };
 		FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2318061BB500DCEF1B /* UIViewAdditions.m */; };
 		FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2518061BB500DCEF1B /* UIViewControllerAdditions.m */; };
-		FEE3FF2E18062FA200DCEF1B /* ActivityEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2D18062FA200DCEF1B /* ActivityEditVC.m */; };
+		FEE3FF2E18062FA200DCEF1B /* ActivityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE3FF2D18062FA200DCEF1B /* ActivityDetailVC.m */; };
 		FEF0E0EB17F880AD00D6D680 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0E0EA17F880AD00D6D680 /* SettingVC.m */; };
 		FEF208C817FF98A400315584 /* MessageData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = FEF208C717FF98A400315584 /* MessageData.geojson */; };
 		FEFCFD7217F1025100881C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFCFD7117F1025100881C24 /* Foundation.framework */; };
@@ -96,8 +96,8 @@
 		FEE3FF2318061BB500DCEF1B /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		FEE3FF2418061BB500DCEF1B /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerAdditions.h; sourceTree = "<group>"; };
 		FEE3FF2518061BB500DCEF1B /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerAdditions.m; sourceTree = "<group>"; };
-		FEE3FF2C18062FA200DCEF1B /* ActivityEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityEditVC.h; sourceTree = "<group>"; };
-		FEE3FF2D18062FA200DCEF1B /* ActivityEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityEditVC.m; sourceTree = "<group>"; };
+		FEE3FF2C18062FA200DCEF1B /* ActivityDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailVC.h; sourceTree = "<group>"; };
+		FEE3FF2D18062FA200DCEF1B /* ActivityDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailVC.m; sourceTree = "<group>"; };
 		FEF0E0E917F880AD00D6D680 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		FEF0E0EA17F880AD00D6D680 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		FEF208C717FF98A400315584 /* MessageData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageData.geojson; sourceTree = "<group>"; };
@@ -248,8 +248,8 @@
 				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
 				FEF0E0E917F880AD00D6D680 /* SettingVC.h */,
 				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
-				FEE3FF2C18062FA200DCEF1B /* ActivityEditVC.h */,
-				FEE3FF2D18062FA200DCEF1B /* ActivityEditVC.m */,
+				FEE3FF2C18062FA200DCEF1B /* ActivityDetailVC.h */,
+				FEE3FF2D18062FA200DCEF1B /* ActivityDetailVC.m */,
 				FE7E43851815A39100FE5DAC /* HomeVC.h */,
 				FE7E43861815A39100FE5DAC /* HomeVC.m */,
 			);
@@ -507,7 +507,7 @@
 				FE7E43971815ADC800FE5DAC /* DVBaseVC.m in Sources */,
 				FEFCFD8817F1025100881C24 /* MyActivityListVC.m in Sources */,
 				FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */,
-				FEE3FF2E18062FA200DCEF1B /* ActivityEditVC.m in Sources */,
+				FEE3FF2E18062FA200DCEF1B /* ActivityDetailVC.m in Sources */,
 				FEE3FF171805BAC000DCEF1B /* DataCenter.m in Sources */,
 				FEFCFD7E17F1025100881C24 /* main.m in Sources */,
 				FEE3FF2818061BB500DCEF1B /* UIDeviceAdditions.m in Sources */,

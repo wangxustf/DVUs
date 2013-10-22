@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
-#import "ActivityEditVC.h"
+#import "ActivityDetailVC.h"
 #import "CMCommonCategory.h"
 #import "DataCenter.h"
 #import "FriendListVC.h"
 
-@implementation ActivityEditVC {
+@implementation ActivityDetailVC {
     DVActivity *_newMessage;
 }
 

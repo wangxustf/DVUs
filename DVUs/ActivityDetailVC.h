@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
+#import "DVBaseVC.h"
 
-@interface ActivityEditVC : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ActivityDetailVC : DVBaseVC<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic,strong)IBOutlet UITextField *titleTextfield;
 @property (nonatomic,strong)IBOutlet UITextView *contentTextview;

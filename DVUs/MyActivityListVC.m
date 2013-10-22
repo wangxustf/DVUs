@@ -7,7 +7,7 @@
 //
 
 #import "MyActivityListVC.h"
-#import "ActivityEditVC.h"
+#import "ActivityDetailVC.h"
 
 @implementation MyActivityListVC
 
@@ -79,7 +79,7 @@
     }
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ActivityEditVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+    ActivityDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
     
     vc.outMessage = tmpMessage;
     
@@ -120,7 +120,6 @@
 
 - (void)setRefMessage:(DVActivity *)refMessage {
     _refMessage = refMessage;
-    
     if (_refMessage) {
         self.timeLabel.text = _refMessage.timeStr;
         self.infoLabel.text = _refMessage.title;

@@ -22,7 +22,7 @@
     
     if (_enableSwipeBack) {
         UISwipeGestureRecognizer *swipeGesture=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onGestureBack)];
-        swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+        swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
         [self.view addGestureRecognizer:swipeGesture];
     }
 }

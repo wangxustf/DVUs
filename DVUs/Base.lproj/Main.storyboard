@@ -32,7 +32,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="UndoMsgTableCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="UndoMsgTableCell" rowHeight="54" id="oCd-Zm-njn" customClass="UndoActTableCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="UndoMsgTableCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="UndoActTableCell" rowHeight="54" id="oCd-Zm-njn" customClass="UndoActTableCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCd-Zm-njn" id="Ngp-rC-ksa">
@@ -454,6 +454,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="FL7-qC-5Ed"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="numLabel" destination="BtN-ur-QXM" id="Vby-CS-pSz"/>
                         <segue destination="CZ4-MO-1fc" kind="push" identifier="sugueOnDate" id="ZDp-d3-OG5"/>

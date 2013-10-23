@@ -45,10 +45,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *tmpCell = nil;
-    static NSString *cellIdentifier = @"DoneMsgTableCell";
+    static NSString *cellIdentifier = @"DoneActTableCell";
     DVActivity *tmpMessage = nil;
     if (indexPath.section == 0) {
-        cellIdentifier = @"UndoMsgTableCell";
+        cellIdentifier = @"UndoActTableCell";
         tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
         
         tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -57,7 +57,7 @@
         }
         ((UndoActTableCell*)tmpCell).refMessage = tmpMessage;
     } else {
-        cellIdentifier = @"DoneMsgTableCell";
+        cellIdentifier = @"DoneActTableCell";
         tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
         
         tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];

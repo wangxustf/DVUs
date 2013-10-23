@@ -85,9 +85,8 @@
     
     [self.navigationController pushViewController:vc animated:YES];
     
-//    [self presentViewController:vc animated:YES completion:^{
-//        
-//    }];
+    //segueActDetail
+    
 }
 
 

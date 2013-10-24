@@ -21,14 +21,6 @@
 
 #pragma mark - message cell
 
-@interface DoneActTableCell : UITableViewCell
-@property (nonatomic,weak)DVActivity *refMessage;
-@property (nonatomic,strong)IBOutlet UILabel *infoLabel;
-@property (nonatomic,strong)IBOutlet UILabel *timeLabel;
-
-
-@end
-
 @interface UndoActTableCell : UITableViewCell
 
 @property (nonatomic,weak)DVActivity *refMessage;

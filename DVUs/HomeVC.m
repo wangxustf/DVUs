@@ -52,10 +52,10 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    DVBaseVC *toVC = segue.destinationViewController;
-    if ([segue.identifier isEqualToString:@"sugueOnDate"]) {
-        toVC.enableSwipeBack = YES;
-    }
+//    DVBaseVC *toVC = segue.destinationViewController;
+//    if ([segue.identifier isEqualToString:@"sugueOnDate"]) {
+//        toVC.enableSwipeBack = YES;
+//    }
 }
 
 

@@ -16,3 +16,13 @@
 #define DVAlert(s) [[TKAlertCenter defaultCenter] postAlertWithMessage:s];
 #define DVAlertNeedClick(s) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:s delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil];[alert show];
 #define DVAlertDetail(t,d) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:t message:d delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil];[alert show];
+
+#define DVColorGreen  [UIColor greenColor]
+#define DVColorBlue  [UIColor blueColor]
+#define DVColorGray  [UIColor grayColor]
+#define DVColorRed  [UIColor redColor]
+#define DVColorYellow  [UIColor yellowColor]
+#define DVColorClear  [UIColor clearColor]
+
+
+

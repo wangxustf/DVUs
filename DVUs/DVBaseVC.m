@@ -8,23 +8,33 @@
 
 #import "DVBaseVC.h"
 
-@interface DVBaseVC ()
-
-@end
-
 @implementation DVBaseVC
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if (_enableSwipeBack) {
-        UISwipeGestureRecognizer *swipeGesture=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onGestureBack)];
-        swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
-        [self.view addGestureRecognizer:swipeGesture];
+    [self checkIfEnableSwipeRight];
+}
+
+- (void)checkIfEnableSwipeRight {
+    _enableSwipeBack = YES;
+    
+    if (self.navigationController.viewControllers.count > 0) {
+        UIViewController *rootVC = [self.navigationController.viewControllers objectAtIndex:0];
+        if (self == rootVC) {
+            _enableSwipeBack = NO;
+        }
     }
+
+    if (!_enableSwipeBack) {
+        return;
+    }
+    
+    UISwipeGestureRecognizer *swipeGesture=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onGestureBack)];
+    swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeGesture];
 }
 
 - (void)didReceiveMemoryWarning

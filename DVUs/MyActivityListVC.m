@@ -31,56 +31,36 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0) { // undo
-        return [DataCenter sharedDataCenter].undoList.count;
-    } else {
-        return [DataCenter sharedDataCenter].doneList.count;
-    }
+    return [DataCenter sharedDataCenter].undoList.count;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 1;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *tmpCell = nil;
-    static NSString *cellIdentifier = @"DoneActTableCell";
+    static NSString *cellIdentifier = @"UndoActTableCell";
     DVActivity *tmpMessage = nil;
-    if (indexPath.section == 0) {
-        cellIdentifier = @"UndoActTableCell";
-        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
-        
-        tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-        if (!tmpCell) {
-            tmpCell = [[UndoActTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        }
-        ((UndoActTableCell*)tmpCell).refMessage = tmpMessage;
-    } else {
-        cellIdentifier = @"DoneActTableCell";
-        tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
-        
-        tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-        if (!tmpCell) {
-            tmpCell = [[DoneActTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        }
-        ((DoneActTableCell*)tmpCell).refMessage = tmpMessage;
+    
+    tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+    
+    tmpCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!tmpCell) {
+        tmpCell = [[UndoActTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    ((UndoActTableCell*)tmpCell).refMessage = tmpMessage;
     
     return tmpCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DVActivity *tmpMessage = nil;
-    if (indexPath.section == 0) {
-        tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
-    } else {
-        tmpMessage = [[DataCenter sharedDataCenter].doneList objectAtIndex:indexPath.row];
-    }
+    tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ActivityDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
-    
     vc.outMessage = tmpMessage;
     
     [self.navigationController pushViewController:vc animated:YES];
@@ -101,19 +81,6 @@
 @end
 
 #pragma mark - format data -----------------------------
-
-@implementation DoneActTableCell
-
-- (void)setRefMessage:(DVActivity *)refMessage {
-    _refMessage = refMessage;
-    
-    if (_refMessage) {
-        _timeLabel.text = _refMessage.timeStr;
-        _infoLabel.text = _refMessage.title;
-    }
-}
-
-@end
 
 @implementation UndoActTableCell
 

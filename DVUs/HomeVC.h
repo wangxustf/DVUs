@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HomeVC : UIViewController
+#import "DVBaseVC.h"
+@interface HomeVC : DVBaseVC
 
 @property (nonatomic,strong)IBOutlet UILabel *numLabel;
 

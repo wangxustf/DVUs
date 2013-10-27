@@ -27,8 +27,9 @@
         _undoList = [NSMutableArray array];
         _friendList = [NSMutableArray array];
         _shareActList = [NSMutableArray array];
+        _inviteList = [NSMutableArray array];
         
-        ///fake data
+        ///fake data，人类，这一切，都是假象
         [_doneList addObject:[DVActivity fakeMessage:YES]];
         [_undoList addObject:[DVActivity fakeMessage:NO]];
         
@@ -39,6 +40,10 @@
         for (int i=0; i<10; i++) {
             DVFriend *tmpFriend = [DVFriend fakeFriendRandomly];
             [_friendList addObject:tmpFriend];
+        }
+        
+        for (int i=0; i<15; i++) {
+            [_inviteList addObject:[DVInvite fakeInvitation]];
         }
         
     }
@@ -114,6 +119,29 @@
 
 - (NSString*)description {
     return [NSString stringWithFormat:@"Friend name : %@ | face : %@",_name,_faceImage];
+}
+
+@end
+
+
+@implementation DVInvite
+
++ (id)fakeInvitation {
+    DVInvite *newInvite = [[DVInvite alloc] init];
+    
+    int ranTitleNum = arc4random()%4;
+    NSArray *names = @[@"张三",@"李四",@"王二",@"麻子"];
+    NSArray *infos = @[@"吃饭",@"郊游",@"嘿嘿嘿？",@"学习编程"];
+    newInvite.title = [NSString stringWithFormat:@"%@ 邀请你去 %@",names[ranTitleNum],infos[ranTitleNum]];
+    
+    int ranDateNum = arc4random()%40;
+    NSDate *newDate = [NSDate dateWithDaysFromNow:ranDateNum];
+    newInvite.time = newDate;
+    newInvite.timeStr = [newDate yyyyMMddHHmm];
+    
+    newInvite.status = arc4random()%4;
+    
+    return newInvite;
 }
 
 @end

@@ -13,7 +13,7 @@
 @property (nonatomic,strong)NSMutableArray *undoList;//未做
 @property (nonatomic,strong)NSMutableArray *doneList;//已经做
 @property (nonatomic,strong)NSMutableArray *shareActList;//分享的活动列表
-
+@property (nonatomic,strong)NSMutableArray *inviteList;//收到的邀请列表
 @property (nonatomic,strong)NSMutableArray *friendList;
 
 @property (nonatomic,weak)DVActivity *activeMessage;
@@ -58,13 +58,24 @@
 @end
 
 
-//@interface DVActivity : NSObject
-//
-//@property (nonatomic,copy)NSString *title;
-//@property (nonatomic,strong)NSString *content;
-//@property (nonatomic,strong)NSDate *time;
-//
-//@end
+typedef enum {
+    DVInviteStatusUnread = 0, //未读
+    DVInviteStatusConfirm,//确认参与
+    DVInviteStatusRefuse,//拒绝
+    DVInviteStatusDismiss,//忽略
+}DVInviteStatus;
+
+@interface DVInvite : NSObject
+
+@property (nonatomic,copy)NSString *title;
+@property (nonatomic,strong)NSString *timeStr;
+@property (nonatomic,strong)NSDate *time;
+
+@property (nonatomic,assign)DVInviteStatus status;
+
++ (id)fakeInvitation;
+
+@end
 
 
 

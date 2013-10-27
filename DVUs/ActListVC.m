@@ -7,12 +7,15 @@
 //
 
 #import "ActListVC.h"
+#import "ShareActDetail.h"
 
 @interface ActListVC ()
 
 @end
 
-@implementation ActListVC
+@implementation ActListVC {
+    DVActivity *_actWillSent;
+}
 
 
 
@@ -57,19 +60,23 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DVActivity *tmpMessage = nil;
-    tmpMessage = [[DataCenter sharedDataCenter].shareActList objectAtIndex:indexPath.row];
+    _actWillSent = [[DataCenter sharedDataCenter].shareActList objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"segueOnShareActDetail" sender:self];
     
 //    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    ActivityDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+//    ShareActDetail *vc = [sb instantiateViewControllerWithIdentifier:@"ShareActDetail"];
 //    vc.outMessage = tmpMessage;
-//    
-//    [self.navigationController pushViewController:vc animated:YES];
-    
-    //segueActDetail
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DVBaseVC *toVC = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"segueOnShareActDetail"]) {
+        ShareActDetail *vvvc = (ShareActDetail*)toVC;
+        vvvc.refAct = _actWillSent;
+    }
+}
 
 @end
 

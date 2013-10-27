@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DVBaseVC.h"
 
-@interface SettingVC : UIViewController
+@interface SettingVC : DVBaseVC
 
 @end

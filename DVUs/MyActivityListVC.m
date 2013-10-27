@@ -59,6 +59,8 @@
     DVActivity *tmpMessage = nil;
     tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
     
+    [self performSegueWithIdentifier:@"segueOnShare" sender:self];
+    
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ActivityDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
     vc.outMessage = tmpMessage;

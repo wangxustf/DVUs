@@ -9,7 +9,9 @@
 #import "HomeVC.h"
 #import "DVBaseVC.h"
 
-@implementation HomeVC
+@implementation HomeVC {
+    PopView *_popView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,6 +26,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    _popView = [[PopView alloc] init];
+    
+    CGRect r = _popView.frame;
+    [self.view addSubview:_popView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +53,8 @@
 
 - (IBAction)onSetting {
     NSLog(@"onSetting");
+    [self performSegueWithIdentifier:@"segueOnSetting" sender:self];
+    
 }
 
 - (IBAction)onMessageList {
@@ -59,5 +68,29 @@
 //    }
 }
 
+
+@end
+
+#pragma mark - 
+
+@implementation PopView
+
+
+@end
+
+@implementation PopCell
+
+- (void)setTime:(NSString*)time info:(NSString*)info {
+    _timeLabel.text = time;
+    _infoLabel.text = info;
+}
+
+- (IBAction)onConfirm {
+    NSLog(@"onConfirm");
+}
+
+- (IBAction)onDismiss {
+    NSLog(@"onDismiss");
+}
 
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E7F27F3F197487288DB5705 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CBA47C5FAE4CDD9DFBD4DD /* libPods.a */; };
+		FE16C32F181C939B00C8AED6 /* share_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C32E181C939B00C8AED6 /* share_bg.png */; };
+		FE16C332181C94B100C8AED6 /* ActListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE16C331181C94B100C8AED6 /* ActListVC.m */; };
+		FE16C335181C9A5C00C8AED6 /* ShareActDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FE16C334181C9A5C00C8AED6 /* ShareActDetail.m */; };
 		FE38B7F118070DBE00614EA1 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EE18070DBE00614EA1 /* face1.png */; };
 		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
 		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
@@ -65,6 +68,11 @@
 /* Begin PBXFileReference section */
 		86EC87245CCF430DBE5584E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A6CBA47C5FAE4CDD9DFBD4DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE16C32E181C939B00C8AED6 /* share_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_bg.png; sourceTree = "<group>"; };
+		FE16C330181C94B100C8AED6 /* ActListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActListVC.h; sourceTree = "<group>"; };
+		FE16C331181C94B100C8AED6 /* ActListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActListVC.m; sourceTree = "<group>"; };
+		FE16C333181C9A5C00C8AED6 /* ShareActDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareActDetail.h; sourceTree = "<group>"; };
+		FE16C334181C9A5C00C8AED6 /* ShareActDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareActDetail.m; sourceTree = "<group>"; };
 		FE38B7EE18070DBE00614EA1 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		FE38B7EF18070DBE00614EA1 /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
 		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
@@ -155,9 +163,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE16C336181C9A6400C8AED6 /* myact */ = {
+			isa = PBXGroup;
+			children = (
+				FEFCFD8917F1025100881C24 /* FriendListVC.h */,
+				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
+				FEFCFD8617F1025100881C24 /* MyActivityListVC.h */,
+				FEFCFD8717F1025100881C24 /* MyActivityListVC.m */,
+				FEE3FF2C18062FA200DCEF1B /* ActivityDetailVC.h */,
+				FEE3FF2D18062FA200DCEF1B /* ActivityDetailVC.m */,
+			);
+			name = myact;
+			sourceTree = "<group>";
+		};
+		FE16C337181C9A7700C8AED6 /* shareact */ = {
+			isa = PBXGroup;
+			children = (
+				FE16C330181C94B100C8AED6 /* ActListVC.h */,
+				FE16C331181C94B100C8AED6 /* ActListVC.m */,
+				FE16C333181C9A5C00C8AED6 /* ShareActDetail.h */,
+				FE16C334181C9A5C00C8AED6 /* ShareActDetail.m */,
+			);
+			name = shareact;
+			sourceTree = "<group>";
+		};
 		FE7E4378181596B500FE5DAC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FE16C32E181C939B00C8AED6 /* share_bg.png */,
 				FEDB51E81818A5C700D836F8 /* btn_add@2x.png */,
 				FEDB51E61818A03D00D836F8 /* bg_home@2x.png */,
 				FEDB51EA1818ABA500D836F8 /* btn_confirm@2x.png */,
@@ -249,16 +282,12 @@
 		FEF0E0E817F8805700D6D680 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FE16C337181C9A7700C8AED6 /* shareact */,
+				FE16C336181C9A6400C8AED6 /* myact */,
 				FED221F317FD0432002E6708 /* messageList */,
 				FEFCFD8317F1025100881C24 /* Main.storyboard */,
-				FEFCFD8617F1025100881C24 /* MyActivityListVC.h */,
-				FEFCFD8717F1025100881C24 /* MyActivityListVC.m */,
-				FEFCFD8917F1025100881C24 /* FriendListVC.h */,
-				FEFCFD8A17F1025100881C24 /* FriendListVC.m */,
 				FEF0E0E917F880AD00D6D680 /* SettingVC.h */,
 				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
-				FEE3FF2C18062FA200DCEF1B /* ActivityDetailVC.h */,
-				FEE3FF2D18062FA200DCEF1B /* ActivityDetailVC.m */,
 				FE7E43851815A39100FE5DAC /* HomeVC.h */,
 				FE7E43861815A39100FE5DAC /* HomeVC.m */,
 			);
@@ -440,6 +469,7 @@
 			files = (
 				FE7E438318159E1500FE5DAC /* btn_notice@2x.png in Resources */,
 				FE7E438418159E1500FE5DAC /* icon_notice@2x.png in Resources */,
+				FE16C32F181C939B00C8AED6 /* share_bg.png in Resources */,
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
 				FEFCFD7C17F1025100881C24 /* InfoPlist.strings in Resources */,
@@ -511,11 +541,13 @@
 				FE7E43931815A64B00FE5DAC /* TKAlertCenter.m in Sources */,
 				FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */,
 				FE7E43871815A39100FE5DAC /* HomeVC.m in Sources */,
+				FE16C332181C94B100C8AED6 /* ActListVC.m in Sources */,
 				FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */,
 				FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */,
 				FE7E438E1815A61C00FE5DAC /* DVTools.m in Sources */,
 				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
 				FEE3FF2918061BB500DCEF1B /* UIFontAdditions.m in Sources */,
+				FE16C335181C9A5C00C8AED6 /* ShareActDetail.m in Sources */,
 				FE7E43971815ADC800FE5DAC /* DVBaseVC.m in Sources */,
 				FEFCFD8817F1025100881C24 /* MyActivityListVC.m in Sources */,
 				FEE3FF2718061BB500DCEF1B /* NSStringAdditions.m in Sources */,

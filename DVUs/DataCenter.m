@@ -26,10 +26,15 @@
         _doneList = [NSMutableArray array];
         _undoList = [NSMutableArray array];
         _friendList = [NSMutableArray array];
+        _shareActList = [NSMutableArray array];
         
         ///fake data
         [_doneList addObject:[DVActivity fakeMessage:YES]];
         [_undoList addObject:[DVActivity fakeMessage:NO]];
+        
+        for (int i=0; i<5; i++) {
+            [_shareActList addObject:[DVActivity fakeShareAct]];
+        }
         
         for (int i=0; i<10; i++) {
             DVFriend *tmpFriend = [DVFriend fakeFriendRandomly];
@@ -54,6 +59,8 @@
         _timeStr = [_time yyyyMMddHHmm];
         _friendList = [NSMutableArray array];
         
+        _actImgList = [NSMutableArray array];
+        
         _isDone = NO;
     }
     return self;
@@ -70,6 +77,25 @@
     DVActivity *newMsg = [[DVActivity alloc] initWithTitle:@"" content:@"" time:[NSDate dateWithDaysFromNow:0]];
     newMsg.isDone = NO;
     return newMsg;
+}
+
++ (id)fakeShareAct {
+    DVActivity *newMsg = [[DVActivity alloc] initWithTitle:@"测试标题" content:@"testContent" time:[NSDate dateWithDaysFromNow:1]];
+    
+    newMsg.actImageName = [self randomImage];
+    
+    
+    for (int i=0; i<5; i++) {
+        [newMsg.actImgList addObject:[self randomImage]];
+        newMsg.title = [NSString stringWithFormat:@"actTest - %d",i];
+    }
+    
+    return newMsg;
+}
+
++ (NSString*)randomImage {
+    int index = arc4random()%3 + 1;
+    return [NSString stringWithFormat:@"face%d.png",index];
 }
 
 @end

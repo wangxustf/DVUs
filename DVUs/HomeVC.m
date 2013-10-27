@@ -41,6 +41,7 @@
 
 - (IBAction)onShare {
     NSLog(@"onShare");
+    [self performSegueWithIdentifier:@"segueOnShare" sender:self];
 }
 
 - (IBAction)onSetting {

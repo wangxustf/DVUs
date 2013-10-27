@@ -10,8 +10,9 @@
 
 @class DVActivity;
 @interface DataCenter : NSObject
-@property (nonatomic,strong)NSMutableArray *undoList;
-@property (nonatomic,strong)NSMutableArray *doneList;
+@property (nonatomic,strong)NSMutableArray *undoList;//未做
+@property (nonatomic,strong)NSMutableArray *doneList;//已经做
+@property (nonatomic,strong)NSMutableArray *shareActList;//分享的活动列表
 
 @property (nonatomic,strong)NSMutableArray *friendList;
 
@@ -34,10 +35,15 @@
 
 @property (nonatomic,strong)NSMutableArray *friendList;
 
+@property (nonatomic,copy)NSString *actImageName;//tmp image
+@property (nonatomic,strong)NSMutableArray *actImgList; //tmp image list
+
 - (id)initWithTitle:(NSString*)title content:(NSString*)content time:(NSDate*)time;
 
 + (id)fakeMessage:(BOOL)isDone;
 + (id)emptyMessage;
+
++ (id)fakeShareAct;
 @end
 
 

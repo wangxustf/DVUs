@@ -13,7 +13,6 @@
 		FE16C335181C9A5C00C8AED6 /* ShareActDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FE16C334181C9A5C00C8AED6 /* ShareActDetail.m */; };
 		FE16C33A181CA25000C8AED6 /* btn_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C338181CA25000C8AED6 /* btn_mark@2x.png */; };
 		FE16C33B181CA25000C8AED6 /* btn_unmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C339181CA25000C8AED6 /* btn_unmark@2x.png */; };
-		FE16C33D181CAD9600C8AED6 /* testXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE16C33C181CAD9600C8AED6 /* testXIB.xib */; };
 		FE16C33F181CB9AB00C8AED6 /* icon_sepr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C33E181CB9AB00C8AED6 /* icon_sepr@2x.png */; };
 		FE16C342181CB9B400C8AED6 /* btn_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C340181CB9B400C8AED6 /* btn_cancel@2x.png */; };
 		FE16C343181CB9B400C8AED6 /* btn_invi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C341181CB9B400C8AED6 /* btn_invi@2x.png */; };
@@ -31,6 +30,7 @@
 		FE7E438E1815A61C00FE5DAC /* DVTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E438D1815A61C00FE5DAC /* DVTools.m */; };
 		FE7E43931815A64B00FE5DAC /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E43921815A64B00FE5DAC /* TKAlertCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FE7E43971815ADC800FE5DAC /* DVBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E43961815ADC800FE5DAC /* DVBaseVC.m */; };
+		FED40365181ECA24006BFE27 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = FED40364181ECA24006BFE27 /* RNFrostedSidebar.m */; };
 		FEDB51E71818A03D00D836F8 /* bg_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDB51E61818A03D00D836F8 /* bg_home@2x.png */; };
 		FEDB51E91818A5C700D836F8 /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDB51E81818A5C700D836F8 /* btn_add@2x.png */; };
 		FEDB51EB1818ABA500D836F8 /* btn_confirm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDB51EA1818ABA500D836F8 /* btn_confirm@2x.png */; };
@@ -81,7 +81,6 @@
 		FE16C334181C9A5C00C8AED6 /* ShareActDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareActDetail.m; sourceTree = "<group>"; };
 		FE16C338181CA25000C8AED6 /* btn_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_mark@2x.png"; sourceTree = "<group>"; };
 		FE16C339181CA25000C8AED6 /* btn_unmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_unmark@2x.png"; sourceTree = "<group>"; };
-		FE16C33C181CAD9600C8AED6 /* testXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testXIB.xib; sourceTree = "<group>"; };
 		FE16C33E181CB9AB00C8AED6 /* icon_sepr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sepr@2x.png"; sourceTree = "<group>"; };
 		FE16C340181CB9B400C8AED6 /* btn_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cancel@2x.png"; sourceTree = "<group>"; };
 		FE16C341181CB9B400C8AED6 /* btn_invi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_invi@2x.png"; sourceTree = "<group>"; };
@@ -104,6 +103,8 @@
 		FE7E43921815A64B00FE5DAC /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
 		FE7E43951815ADC800FE5DAC /* DVBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseVC.h; sourceTree = "<group>"; };
 		FE7E43961815ADC800FE5DAC /* DVBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseVC.m; sourceTree = "<group>"; };
+		FED40363181ECA24006BFE27 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
+		FED40364181ECA24006BFE27 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		FEDB51E61818A03D00D836F8 /* bg_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_home@2x.png"; sourceTree = "<group>"; };
 		FEDB51E81818A5C700D836F8 /* btn_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_add@2x.png"; sourceTree = "<group>"; };
 		FEDB51EA1818ABA500D836F8 /* btn_confirm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_confirm@2x.png"; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		FE7E438F1815A63F00FE5DAC /* thirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				FED40362181ECA24006BFE27 /* RNFrostedSidebar */,
 				FE7E43901815A64B00FE5DAC /* TKAlert */,
 			);
 			name = thirdPart;
@@ -258,6 +260,15 @@
 				FEF208C717FF98A400315584 /* MessageData.geojson */,
 			);
 			name = messageList;
+			sourceTree = "<group>";
+		};
+		FED40362181ECA24006BFE27 /* RNFrostedSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				FED40363181ECA24006BFE27 /* RNFrostedSidebar.h */,
+				FED40364181ECA24006BFE27 /* RNFrostedSidebar.m */,
+			);
+			path = RNFrostedSidebar;
 			sourceTree = "<group>";
 		};
 		FEE1CB3B1814A5EE00AD755F /* Service */ = {
@@ -307,7 +318,6 @@
 				FEF0E0EA17F880AD00D6D680 /* SettingVC.m */,
 				FE7E43851815A39100FE5DAC /* HomeVC.h */,
 				FE7E43861815A39100FE5DAC /* HomeVC.m */,
-				FE16C33C181CAD9600C8AED6 /* testXIB.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -488,7 +498,6 @@
 				FE7E438318159E1500FE5DAC /* btn_notice@2x.png in Resources */,
 				FE7E438418159E1500FE5DAC /* icon_notice@2x.png in Resources */,
 				FE16C32F181C939B00C8AED6 /* share_bg.png in Resources */,
-				FE16C33D181CAD9600C8AED6 /* testXIB.xib in Resources */,
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FE16C342181CB9B400C8AED6 /* btn_cancel@2x.png in Resources */,
 				FEF208C817FF98A400315584 /* MessageData.geojson in Resources */,
@@ -566,6 +575,7 @@
 				FEE3FF2B18061BB500DCEF1B /* UIViewControllerAdditions.m in Sources */,
 				FE7E43871815A39100FE5DAC /* HomeVC.m in Sources */,
 				FE16C332181C94B100C8AED6 /* ActListVC.m in Sources */,
+				FED40365181ECA24006BFE27 /* RNFrostedSidebar.m in Sources */,
 				FEFCFD8B17F1025100881C24 /* FriendListVC.m in Sources */,
 				FEE3FF2A18061BB500DCEF1B /* UIViewAdditions.m in Sources */,
 				FE7E438E1815A61C00FE5DAC /* DVTools.m in Sources */,

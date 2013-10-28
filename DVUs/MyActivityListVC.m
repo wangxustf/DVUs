@@ -9,7 +9,10 @@
 #import "MyActivityListVC.h"
 #import "ActivityDetailVC.h"
 
-@implementation MyActivityListVC
+@implementation MyActivityListVC {
+    BOOL _goEditPage;
+    DVActivity *_actWillSent;
+}
 
 - (void)viewDidLoad
 {
@@ -56,28 +59,22 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DVActivity *tmpMessage = nil;
-    tmpMessage = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
-    
-    [self performSegueWithIdentifier:@"segueOnShare" sender:self];
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ActivityDetailVC *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
-    vc.outMessage = tmpMessage;
-    
-    [self.navigationController pushViewController:vc animated:YES];
-    
-    //segueActDetail
-    
+    _goEditPage = YES;
+    _actWillSent = [[DataCenter sharedDataCenter].undoList objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"segueOnActDetail" sender:self];
 }
 
 
 - (IBAction)onAdd {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MessageEditVC"];
+    [self performSegueWithIdentifier:@"segueOnActDetail" sender:self];
     
-    [self.navigationController pushViewController:vc animated:YES];
-    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ActivityDetailVC *toVC = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"segueActDetail"] && _goEditPage) {
+        toVC.outMessage = _actWillSent;
+    }
 }
 
 @end

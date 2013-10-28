@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
 #import "DVBaseVC.h"
+#import "RNFrostedSidebar.h"
 
-@interface ActivityDetailVC : DVBaseVC<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ActivityDetailVC : DVBaseVC<UICollectionViewDataSource,UICollectionViewDelegate,RNFrostedSidebarDelegate>
 
 @property (nonatomic,strong)IBOutlet UITextField *titleTextfield;
 @property (nonatomic,strong)IBOutlet UITextView *contentTextview;

@@ -102,7 +102,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="actList" destination="30b-QL-cjd" id="p0e-0L-4tX"/>
-                        <segue destination="usY-PP-9j8" kind="push" identifier="segueActDetail" id="DlS-yC-npo"/>
+                        <segue destination="usY-PP-9j8" kind="push" identifier="segueOnActDetail" id="DlS-yC-npo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
@@ -339,7 +339,7 @@
                         <outlet property="faceCollectionView" destination="afG-hD-KQy" id="9xC-jW-T8O"/>
                         <outlet property="timeLabel" destination="72s-Ff-Sst" id="1ts-jw-bg9"/>
                         <outlet property="titleTextfield" destination="D8M-z8-98v" id="B0N-Me-0SO"/>
-                        <segue destination="QUy-BD-bpt" kind="push" identifier="segueOnActDetail" id="O8a-oh-7rx"/>
+                        <segue destination="QUy-BD-bpt" kind="push" identifier="segueOnFriends" id="O8a-oh-7rx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0i-0Y-nFU" userLabel="First Responder" sceneMemberID="firstResponder"/>

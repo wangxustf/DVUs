@@ -24,7 +24,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [(UIWebView*)self.view loadHTMLString:@"test" baseURL:[NSURL URLWithString:@"www.baidu.com"]];
+//    - (void)loadHTMLString:(NSString *)string baseURL:(NSURL *)baseURL;
 }
 
 - (void)didReceiveMemoryWarning

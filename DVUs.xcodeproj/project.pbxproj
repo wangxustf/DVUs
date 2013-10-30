@@ -16,6 +16,10 @@
 		FE16C33F181CB9AB00C8AED6 /* icon_sepr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C33E181CB9AB00C8AED6 /* icon_sepr@2x.png */; };
 		FE16C342181CB9B400C8AED6 /* btn_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C340181CB9B400C8AED6 /* btn_cancel@2x.png */; };
 		FE16C343181CB9B400C8AED6 /* btn_invi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16C341181CB9B400C8AED6 /* btn_invi@2x.png */; };
+		FE1E84F6182091C60092C719 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F5182091C60092C719 /* libicucore.dylib */; };
+		FE1E84F8182091CD0092C719 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F7182091CD0092C719 /* CFNetwork.framework */; };
+		FE1E84FA182091D20092C719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F9182091D20092C719 /* CoreData.framework */; };
+		FE1E84FC182091D90092C719 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84FB182091D90092C719 /* Security.framework */; };
 		FE38B7F118070DBE00614EA1 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EE18070DBE00614EA1 /* face1.png */; };
 		FE38B7F218070DBE00614EA1 /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7EF18070DBE00614EA1 /* face2.png */; };
 		FE38B7F318070DBE00614EA1 /* face3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F018070DBE00614EA1 /* face3.png */; };
@@ -87,6 +91,10 @@
 		FE16C33E181CB9AB00C8AED6 /* icon_sepr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sepr@2x.png"; sourceTree = "<group>"; };
 		FE16C340181CB9B400C8AED6 /* btn_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cancel@2x.png"; sourceTree = "<group>"; };
 		FE16C341181CB9B400C8AED6 /* btn_invi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_invi@2x.png"; sourceTree = "<group>"; };
+		FE1E84F5182091C60092C719 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FE1E84F7182091CD0092C719 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FE1E84F9182091D20092C719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE1E84FB182091D90092C719 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FE38B7EE18070DBE00614EA1 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		FE38B7EF18070DBE00614EA1 /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
 		FE38B7F018070DBE00614EA1 /* face3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face3.png; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1E84FC182091D90092C719 /* Security.framework in Frameworks */,
+				FE1E84FA182091D20092C719 /* CoreData.framework in Frameworks */,
+				FE1E84F8182091CD0092C719 /* CFNetwork.framework in Frameworks */,
+				FE1E84F6182091C60092C719 /* libicucore.dylib in Frameworks */,
 				FEFCFD7417F1025100881C24 /* CoreGraphics.framework in Frameworks */,
 				FEFCFD7617F1025100881C24 /* UIKit.framework in Frameworks */,
 				FEFCFD7217F1025100881C24 /* Foundation.framework in Frameworks */,
@@ -367,6 +379,10 @@
 		FEFCFD7017F1025100881C24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE1E84FB182091D90092C719 /* Security.framework */,
+				FE1E84F9182091D20092C719 /* CoreData.framework */,
+				FE1E84F7182091CD0092C719 /* CFNetwork.framework */,
+				FE1E84F5182091C60092C719 /* libicucore.dylib */,
 				FEFCFD7117F1025100881C24 /* Foundation.framework */,
 				FEFCFD7317F1025100881C24 /* CoreGraphics.framework */,
 				FEFCFD7517F1025100881C24 /* UIKit.framework */,

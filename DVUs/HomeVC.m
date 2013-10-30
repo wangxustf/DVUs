@@ -94,7 +94,8 @@
 
 - (IBAction)onSetting {
     NSLog(@"onSetting");
-    [self performSegueWithIdentifier:@"segueOnSetting" sender:self];
+//    [self performSegueWithIdentifier:@"segueOnSetting" sender:self];
+    
     
 }
 

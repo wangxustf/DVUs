@@ -44,8 +44,8 @@
 + (id)emptyMessage;
 
 + (id)fakeShareAct;
-@end
 
+@end
 
 @interface DVFriend : NSObject
 

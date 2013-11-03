@@ -1,0 +1,60 @@
+
+
+--------------------------
+|          UI            |
+--------------------------
+|        Service         |
+--------------------------
+|     Model       DAO    |
+--------------------------
+|         Core           |
+--------------------------
+
+
+
+包
+
+ThirdParty  放第三方的包，不做直接处理，处理的话在core里面写category
+Resources  资源文件，将来资源文件足够多的时候，资源文件和响应的模块放到一起
+   命名格式
+       类型_模块_功能_状态@2x.png
+       btn_home_date_selected@2x.png
+   类型可以有  btn  img  icon  bg  
+Service
+   业务逻辑放在这里，页面的通用逻辑也放在这里
+Model
+   这里单独处理网络数据的获取
+DAO
+   这里单独处理数据的本地存储
+Core
+   这里用Model / DAO / UI 提供最基础的 网络、数据封装等等基础工具
+UI
+   所有的模块UI放这里，根据模块的不同划分开
+
+
+
+iOS Dev
+1, id
+   IDE
+   OC // c
+   
+2, Dev Details
+   Storyboard // code ,xib,
+   VC //trans params
+   Network
+   Data
+   
+3,more
+  block
+  core data
+  gcd
+  delegate
+  thread
+  
+  
+  
+  
+  
+  
+  
+  

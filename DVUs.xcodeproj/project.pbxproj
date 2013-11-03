@@ -13,6 +13,7 @@
 		FE1E84FA182091D20092C719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F9182091D20092C719 /* CoreData.framework */; };
 		FE1E84FC182091D90092C719 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84FB182091D90092C719 /* Security.framework */; };
 		FE38B7F71807208600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F61807208600614EA1 /* README */; };
+		FE6D2DF61826338E00EB6FF9 /* BriefIntro in Resources */ = {isa = PBXBuildFile; fileRef = FE6D2DF51826338E00EB6FF9 /* BriefIntro */; };
 		FEF2B7FC18261FE3005D19E7 /* DVBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */; };
 		FEF2B8101826202B005D19E7 /* bg_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF2B7FD1826202B005D19E7 /* bg_home@2x.png */; };
 		FEF2B8111826202B005D19E7 /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF2B7FE1826202B005D19E7 /* btn_add@2x.png */; };
@@ -89,6 +90,7 @@
 		FE1E84FB182091D90092C719 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FE38B7F61807208600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FE38B7F81807231600614EA1 /* DVUs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVUs.entitlements; sourceTree = "<group>"; };
+		FE6D2DF51826338E00EB6FF9 /* BriefIntro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BriefIntro; sourceTree = "<group>"; };
 		FEF2B7FA18261FE3005D19E7 /* DVBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseService.h; sourceTree = "<group>"; };
 		FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseService.m; sourceTree = "<group>"; };
 		FEF2B7FD1826202B005D19E7 /* bg_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_home@2x.png"; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 		FEFCFD6517F1025000881C24 = {
 			isa = PBXGroup;
 			children = (
+				FE6D2DF51826338E00EB6FF9 /* BriefIntro */,
 				FE38B7F61807208600614EA1 /* README */,
 				FEF2B829182620C5005D19E7 /* ThirdParty */,
 				FEFCFD7717F1025100881C24 /* DVUs */,
@@ -574,6 +577,7 @@
 				FEF2B8221826202B005D19E7 /* share_btn@2x.png in Resources */,
 				FEF2B81E1826202B005D19E7 /* icon_sepr@2x.png in Resources */,
 				FEF2B81F1826202B005D19E7 /* logo@2x.png in Resources */,
+				FE6D2DF61826338E00EB6FF9 /* BriefIntro in Resources */,
 				FEF2B8101826202B005D19E7 /* bg_home@2x.png in Resources */,
 				FEF2B8211826202B005D19E7 /* share_bg.png in Resources */,
 				FEF2B8131826202B005D19E7 /* btn_confirm@2x.png in Resources */,

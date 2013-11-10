@@ -29,6 +29,16 @@
     
     self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
     
+    self.dayPicker.delegate = self;
+    self.dayPicker.dataSource = self;
+    self.dayPicker.dayNameLabelFontSize = 12.0f;
+    self.dayPicker.dayLabelFontSize = 18.0f;
+    self.dateFormatter = [[NSDateFormatter alloc] init];
+    [self.dateFormatter setDateFormat:@"EE"];
+    
+    [self.dayPicker setStartDate:[NSDate date] endDate:[NSDate dateWithDaysFromNow:60]];
+    [self.dayPicker setCurrentDate:[NSDate date] animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +73,7 @@
         _outMessage.title = _titleTextfield.text;
         _outMessage.content = _contentTextview.text;
     } else {
+        _newMessage.title = _titleTextfield.text;
         [[DataCenter sharedDataCenter].undoList addObject:_newMessage];
     }
     [self onBack];
@@ -100,18 +111,6 @@
     return colorsArray;
 }
 
-- (IBAction)onValueChanged:(UISlider*)sender {
-    // value 是 0~720 1个月，30天 * 24 。每单位是1小时
-    NSDate *tmpNewDate = [NSDate dateWithTimeIntervalSinceNow:sender.value * 60 * 60];
-    if (_outMessage) {
-        _outMessage.time = tmpNewDate;
-    } else {
-        _newMessage.time = tmpNewDate;
-    }
-    
-    _timeLabel.text = [tmpNewDate yyyyMMdd];
-}
-
 - (void)onTapBackground {
     if ([_contentTextview isFirstResponder]) {
         [_contentTextview resignFirstResponder];
@@ -129,6 +128,34 @@
     [textField resignFirstResponder];
     return NO;
 }
+
+#pragma mark - day picker
+
+- (NSString *)dayPicker:(MZDayPicker *)dayPicker titleForCellDayNameLabelInDay:(MZDay *)day
+{
+    return [self.dateFormatter stringFromDate:day.date];
+}
+
+
+- (void)dayPicker:(MZDayPicker *)dayPicker didSelectDay:(MZDay *)day
+{
+//    NSLog(@"Did select day %@",day.day);
+    NSDate *tmpNewDate = day.date;
+    if (_outMessage) {
+        _outMessage.time = tmpNewDate;
+    } else {
+        _newMessage.time = tmpNewDate;
+    }
+    
+    _timeLabel.text = [NSString stringWithFormat:@"%@号 %@",day.day,day.name];
+    
+}
+
+- (void)dayPicker:(MZDayPicker *)dayPicker willSelectDay:(MZDay *)day
+{
+//    NSLog(@"Will select day %@",day.day);
+}
+
 
 #pragma mark - 
 

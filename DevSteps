@@ -1,0 +1,25 @@
+
+
+one more step , more close to the One Piece
+
+
+
+-------1109之前
+  经历一次颠覆性的重写，和一次UI变动，决定采用Storyboard来做 (Unity3D这次颠覆我就不说了)
+  cocoapods 管理第三方控件 (SDWebImage , AFNetwork)
+
+------ 1109
+  采用xcassets文件组，来管理资源 (这个可以用来做适配)
+  UI按照最新标准来重构
+  加入了MZDayPicker
+------1110
+  fix掉MZDayPicker的bug(内部的tableView位置不对，导致无法点击)，&& 给作者提了issue
+  MZDayPicker 用pod来管理 (pod serach query --ios)
+  
+
+------
+------
+------
+------
+------
+------

@@ -31,8 +31,8 @@
     
     [self.view addSubview:_popoverView];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapBackground)];
-    [self.view addGestureRecognizer:tap];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapBackground)];
+//    [self.view addGestureRecognizer:tap];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -94,14 +94,18 @@
 
 - (IBAction)onSetting {
     NSLog(@"onSetting");
-//    [self performSegueWithIdentifier:@"segueOnSetting" sender:self];
+    [self performSegueWithIdentifier:@"segueOnSetting" sender:self];
     
     
 }
 
 - (IBAction)onMessageList {
-    NSLog(@"onMessageList");
-    [self showPopViewAnimated:YES];
+    if (_popoverView.frame.origin.y == popShowTop) {
+        [self hidePopViewAnimated:YES];
+    } else {
+        [self showPopViewAnimated:YES];
+    }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

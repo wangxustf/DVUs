@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "DataCenter.h"
 #import "DVBaseVC.h"
-#import "RNFrostedSidebar.h"
 
-@interface ActivityDetailVC : DVBaseVC<UICollectionViewDataSource,UICollectionViewDelegate,RNFrostedSidebarDelegate>
+@interface ActivityDetailVC : DVBaseVC<UICollectionViewDataSource,UICollectionViewDelegate,RNFrostedSidebarDelegate,MZDayPickerDelegate, MZDayPickerDataSource>
 
 @property (nonatomic,strong)IBOutlet UITextField *titleTextfield;
 @property (nonatomic,strong)IBOutlet UITextView *contentTextview;
 @property (nonatomic,strong)IBOutlet UILabel *timeLabel;
 @property (nonatomic,strong)IBOutlet UICollectionView *faceCollectionView;
+
+
+@property (nonatomic,strong)IBOutlet MZDayPicker *dayPicker;
+@property (nonatomic,strong)NSDateFormatter *dateFormatter;
 
 @property (nonatomic,strong) DVActivity *outMessage;
 
@@ -24,8 +27,6 @@
 - (IBAction)onUpdate;
 
 - (IBAction)onAddFriend;
-
-- (IBAction)onValueChanged:(UISlider*)sender;
 
 @end
 

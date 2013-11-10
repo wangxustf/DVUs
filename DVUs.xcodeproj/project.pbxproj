@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3E7F27F3F197487288DB5705 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CBA47C5FAE4CDD9DFBD4DD /* libPods.a */; };
+		FE08AC5D182F1151004DDCBE /* DVUIComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FE08AC5C182F1151004DDCBE /* DVUIComponents.m */; };
 		FE1E84F6182091C60092C719 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F5182091C60092C719 /* libicucore.dylib */; };
 		FE1E84F8182091CD0092C719 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F7182091CD0092C719 /* CFNetwork.framework */; };
 		FE1E84FA182091D20092C719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F9182091D20092C719 /* CoreData.framework */; };
 		FE1E84FC182091D90092C719 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84FB182091D90092C719 /* Security.framework */; };
 		FE38B7F71807208600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F61807208600614EA1 /* README */; };
 		FE57E529182DDC0400201579 /* iPhone.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE57E528182DDC0400201579 /* iPhone.xcassets */; };
+		FE57E52B182DDF4700201579 /* DevSteps in Resources */ = {isa = PBXBuildFile; fileRef = FE57E52A182DDF4700201579 /* DevSteps */; };
 		FE6D2DF61826338E00EB6FF9 /* BriefIntro in Resources */ = {isa = PBXBuildFile; fileRef = FE6D2DF51826338E00EB6FF9 /* BriefIntro */; };
 		FEF2B7FC18261FE3005D19E7 /* DVBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */; };
 		FEF2B82518262041005D19E7 /* DVBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B82418262041005D19E7 /* DVBaseModel.m */; };
@@ -66,6 +68,8 @@
 /* Begin PBXFileReference section */
 		86EC87245CCF430DBE5584E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A6CBA47C5FAE4CDD9DFBD4DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE08AC5B182F1151004DDCBE /* DVUIComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVUIComponents.h; sourceTree = "<group>"; };
+		FE08AC5C182F1151004DDCBE /* DVUIComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVUIComponents.m; sourceTree = "<group>"; };
 		FE1E84F5182091C60092C719 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		FE1E84F7182091CD0092C719 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FE1E84F9182091D20092C719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -73,6 +77,7 @@
 		FE38B7F61807208600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FE38B7F81807231600614EA1 /* DVUs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVUs.entitlements; sourceTree = "<group>"; };
 		FE57E528182DDC0400201579 /* iPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iPhone.xcassets; sourceTree = "<group>"; };
+		FE57E52A182DDF4700201579 /* DevSteps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DevSteps; sourceTree = "<group>"; };
 		FE6D2DF51826338E00EB6FF9 /* BriefIntro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BriefIntro; sourceTree = "<group>"; };
 		FEF2B7FA18261FE3005D19E7 /* DVBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseService.h; sourceTree = "<group>"; };
 		FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseService.m; sourceTree = "<group>"; };
@@ -247,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				FEF2B87118262405005D19E7 /* Main.storyboard */,
+				FE08AC5B182F1151004DDCBE /* DVUIComponents.h */,
+				FE08AC5C182F1151004DDCBE /* DVUIComponents.m */,
 				FEF2B86B18262320005D19E7 /* DVBaseVC.h */,
 				FEF2B86C18262320005D19E7 /* DVBaseVC.m */,
 				FEF2B833182621FA005D19E7 /* Home */,
@@ -342,6 +349,7 @@
 		FEFCFD6517F1025000881C24 = {
 			isa = PBXGroup;
 			children = (
+				FE57E52A182DDF4700201579 /* DevSteps */,
 				FE6D2DF51826338E00EB6FF9 /* BriefIntro */,
 				FE38B7F61807208600614EA1 /* README */,
 				FEF2B829182620C5005D19E7 /* ThirdParty */,
@@ -517,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE57E52B182DDF4700201579 /* DevSteps in Resources */,
 				FEFCFD8D17F1025100881C24 /* Images.xcassets in Resources */,
 				FE57E529182DDC0400201579 /* iPhone.xcassets in Resources */,
 				FE6D2DF61826338E00EB6FF9 /* BriefIntro in Resources */,
@@ -589,6 +598,7 @@
 				FEF2B84918262205005D19E7 /* NSDateAdditions.m in Sources */,
 				FEF2B84B18262205005D19E7 /* UIDeviceAdditions.m in Sources */,
 				FEF2B84A18262205005D19E7 /* NSStringAdditions.m in Sources */,
+				FE08AC5D182F1151004DDCBE /* DVUIComponents.m in Sources */,
 				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
 				FEF2B87018262347005D19E7 /* ShareActDetail.m in Sources */,
 				FEF2B830182620C5005D19E7 /* RNFrostedSidebar.m in Sources */,

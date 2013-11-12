@@ -1,9 +1,9 @@
 //
 //  NSStringAdditions.h
-//  iMeituan
+//  DVActivity
 //
-//  Created by jianjingbao  on 11-7-12.
-//  Copyright 2011年 Sankuai. All rights reserved.
+//  Created by pan Shiyu on 13-4-25.
+//  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

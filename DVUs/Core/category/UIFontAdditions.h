@@ -1,9 +1,9 @@
 //
 //  UIFontAdditions.h
-//  LBiPhone
+//  DVActivity
 //
-//  Created by spaceli on 11-8-5.
-//  Copyright 2011年 diandian. All rights reserved.
+//  Created by pan Shiyu on 13-4-25.
+//  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

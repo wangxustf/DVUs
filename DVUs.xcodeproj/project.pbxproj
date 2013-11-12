@@ -17,6 +17,10 @@
 		FE57E529182DDC0400201579 /* iPhone.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE57E528182DDC0400201579 /* iPhone.xcassets */; };
 		FE57E52B182DDF4700201579 /* DevSteps in Resources */ = {isa = PBXBuildFile; fileRef = FE57E52A182DDF4700201579 /* DevSteps */; };
 		FE6D2DF61826338E00EB6FF9 /* BriefIntro in Resources */ = {isa = PBXBuildFile; fileRef = FE6D2DF51826338E00EB6FF9 /* BriefIntro */; };
+		FE9F5ECC183135F400176F64 /* DVNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ECB183135F400176F64 /* DVNetwork.m */; };
+		FE9F5ED01831ADED00176F64 /* DVBaseDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ECF1831ADED00176F64 /* DVBaseDomain.m */; };
+		FE9F5ED31831AE2A00176F64 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ED21831AE2A00176F64 /* DataCenter.m */; };
+		FE9F5ED61831AE8B00176F64 /* DVMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ED51831AE8B00176F64 /* DVMessageModel.m */; };
 		FEF2B7FC18261FE3005D19E7 /* DVBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */; };
 		FEF2B82518262041005D19E7 /* DVBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B82418262041005D19E7 /* DVBaseModel.m */; };
 		FEF2B8281826206D005D19E7 /* DVBaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B8271826206D005D19E7 /* DVBaseDAO.m */; };
@@ -27,9 +31,7 @@
 		FEF2B84B18262205005D19E7 /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B84018262205005D19E7 /* UIDeviceAdditions.m */; };
 		FEF2B84C18262205005D19E7 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B84218262205005D19E7 /* UIFontAdditions.m */; };
 		FEF2B84D18262205005D19E7 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B84418262205005D19E7 /* UIViewAdditions.m */; };
-		FEF2B84E18262205005D19E7 /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B84618262205005D19E7 /* UIViewControllerAdditions.m */; };
 		FEF2B84F18262205005D19E7 /* DVTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B84818262205005D19E7 /* DVTools.m */; };
-		FEF2B852182622B5005D19E7 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B851182622B5005D19E7 /* DataCenter.m */; };
 		FEF2B855182622E3005D19E7 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B854182622E3005D19E7 /* HomeVC.m */; };
 		FEF2B85C182622F4005D19E7 /* ActivityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B857182622F4005D19E7 /* ActivityDetailVC.m */; };
 		FEF2B85D182622F4005D19E7 /* FriendListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B859182622F4005D19E7 /* FriendListVC.m */; };
@@ -79,6 +81,14 @@
 		FE57E528182DDC0400201579 /* iPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iPhone.xcassets; sourceTree = "<group>"; };
 		FE57E52A182DDF4700201579 /* DevSteps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DevSteps; sourceTree = "<group>"; };
 		FE6D2DF51826338E00EB6FF9 /* BriefIntro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BriefIntro; sourceTree = "<group>"; };
+		FE9F5ECA183135F400176F64 /* DVNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNetwork.h; sourceTree = "<group>"; };
+		FE9F5ECB183135F400176F64 /* DVNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNetwork.m; sourceTree = "<group>"; };
+		FE9F5ECE1831ADED00176F64 /* DVBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseDomain.h; sourceTree = "<group>"; };
+		FE9F5ECF1831ADED00176F64 /* DVBaseDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseDomain.m; sourceTree = "<group>"; };
+		FE9F5ED11831AE2A00176F64 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		FE9F5ED21831AE2A00176F64 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		FE9F5ED41831AE8B00176F64 /* DVMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVMessageModel.h; sourceTree = "<group>"; };
+		FE9F5ED51831AE8B00176F64 /* DVMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVMessageModel.m; sourceTree = "<group>"; };
 		FEF2B7FA18261FE3005D19E7 /* DVBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseService.h; sourceTree = "<group>"; };
 		FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseService.m; sourceTree = "<group>"; };
 		FEF2B82318262041005D19E7 /* DVBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseModel.h; sourceTree = "<group>"; };
@@ -100,12 +110,8 @@
 		FEF2B84218262205005D19E7 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontAdditions.m; sourceTree = "<group>"; };
 		FEF2B84318262205005D19E7 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		FEF2B84418262205005D19E7 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
-		FEF2B84518262205005D19E7 /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerAdditions.h; sourceTree = "<group>"; };
-		FEF2B84618262205005D19E7 /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerAdditions.m; sourceTree = "<group>"; };
 		FEF2B84718262205005D19E7 /* DVTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTools.h; sourceTree = "<group>"; };
 		FEF2B84818262205005D19E7 /* DVTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTools.m; sourceTree = "<group>"; };
-		FEF2B850182622B5005D19E7 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
-		FEF2B851182622B5005D19E7 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		FEF2B853182622E3005D19E7 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		FEF2B854182622E3005D19E7 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		FEF2B856182622F4005D19E7 /* ActivityDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailVC.h; sourceTree = "<group>"; };
@@ -174,12 +180,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE9F5ECD1831ADB900176F64 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F5ED11831AE2A00176F64 /* DataCenter.h */,
+				FE9F5ED21831AE2A00176F64 /* DataCenter.m */,
+				FE9F5ECE1831ADED00176F64 /* DVBaseDomain.h */,
+				FE9F5ECF1831ADED00176F64 /* DVBaseDomain.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		FEF2B7F518261F89005D19E7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				FEF2B83918262205005D19E7 /* category */,
 				FEF2B84718262205005D19E7 /* DVTools.h */,
 				FEF2B84818262205005D19E7 /* DVTools.m */,
+				FE9F5ECA183135F400176F64 /* DVNetwork.h */,
+				FE9F5ECB183135F400176F64 /* DVNetwork.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -198,6 +217,8 @@
 			children = (
 				FEF2B82318262041005D19E7 /* DVBaseModel.h */,
 				FEF2B82418262041005D19E7 /* DVBaseModel.m */,
+				FE9F5ED41831AE8B00176F64 /* DVMessageModel.h */,
+				FE9F5ED51831AE8B00176F64 /* DVMessageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,8 +234,6 @@
 		FEF2B7F918261FA5005D19E7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FEF2B850182622B5005D19E7 /* DataCenter.h */,
-				FEF2B851182622B5005D19E7 /* DataCenter.m */,
 				FEF2B7FA18261FE3005D19E7 /* DVBaseService.h */,
 				FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */,
 			);
@@ -340,8 +359,6 @@
 				FEF2B84218262205005D19E7 /* UIFontAdditions.m */,
 				FEF2B84318262205005D19E7 /* UIViewAdditions.h */,
 				FEF2B84418262205005D19E7 /* UIViewAdditions.m */,
-				FEF2B84518262205005D19E7 /* UIViewControllerAdditions.h */,
-				FEF2B84618262205005D19E7 /* UIViewControllerAdditions.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -392,6 +409,7 @@
 				FEF2B7F818261F9B005D19E7 /* Resources */,
 				FEF2B7F918261FA5005D19E7 /* Service */,
 				FEF2B7F718261F9B005D19E7 /* Model */,
+				FE9F5ECD1831ADB900176F64 /* Domain */,
 				FEF2B7F618261F89005D19E7 /* DAO */,
 				FEF2B7F518261F89005D19E7 /* Core */,
 				FEF2B832182621FA005D19E7 /* UI */,
@@ -583,11 +601,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF2B84E18262205005D19E7 /* UIViewControllerAdditions.m in Sources */,
-				FEF2B852182622B5005D19E7 /* DataCenter.m in Sources */,
+				FE9F5ECC183135F400176F64 /* DVNetwork.m in Sources */,
 				FEF2B84F18262205005D19E7 /* DVTools.m in Sources */,
+				FE9F5ED61831AE8B00176F64 /* DVMessageModel.m in Sources */,
 				FEF2B7FC18261FE3005D19E7 /* DVBaseService.m in Sources */,
 				FEF2B84C18262205005D19E7 /* UIFontAdditions.m in Sources */,
+				FE9F5ED01831ADED00176F64 /* DVBaseDomain.m in Sources */,
 				FEF2B85C182622F4005D19E7 /* ActivityDetailVC.m in Sources */,
 				FEF2B855182622E3005D19E7 /* HomeVC.m in Sources */,
 				FEF2B86718262307005D19E7 /* SettingVC.m in Sources */,
@@ -600,6 +619,7 @@
 				FEF2B84A18262205005D19E7 /* NSStringAdditions.m in Sources */,
 				FE08AC5D182F1151004DDCBE /* DVUIComponents.m in Sources */,
 				FEFCFD8217F1025100881C24 /* AppDelegate.m in Sources */,
+				FE9F5ED31831AE2A00176F64 /* DataCenter.m in Sources */,
 				FEF2B87018262347005D19E7 /* ShareActDetail.m in Sources */,
 				FEF2B830182620C5005D19E7 /* RNFrostedSidebar.m in Sources */,
 				FEF2B84D18262205005D19E7 /* UIViewAdditions.m in Sources */,

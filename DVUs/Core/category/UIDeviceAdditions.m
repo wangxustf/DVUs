@@ -1,9 +1,9 @@
 //
 //  UIDeviceAdditions.m
-//  iMeituan
+//  DVActivity
 //
-//  Created by  jian jingbao 11-8-8.
-//  Copyright 2011年 Sankuai. All rights reserved.
+//  Created by pan Shiyu on 13-4-25.
+//  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 // 需要引 SystemConfiguration.framework
 

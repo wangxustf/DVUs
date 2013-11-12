@@ -1,9 +1,9 @@
 //
 //  NSDateAdditions.m
-//  iPhone
+//  DVActivity
 //
-//  Created by spaceli on 11-11-17.
-//  Copyright (c) 2011年 diandian.com. All rights reserved.
+//  Created by pan Shiyu on 13-4-25.
+//  Copyright (c) 2013年 pan Shiyu. All rights reserved.
 //
 
 #import "NSDateAdditions.h"

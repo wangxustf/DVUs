@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
   - MZDayPicker (0.0.5)
+  - OCMock (2.2.1)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
@@ -27,11 +28,13 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - MZDayPicker (~> 0.0.5)
+  - OCMock (~> 2.2.1)
   - SDWebImage (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
   MZDayPicker: 1ebc98a0aa72906dc367de4c5b7d4ddb054bb910
+  OCMock: 80e4cfbc71a0e1bd28caf10a9fda27da7c4c8402
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
 
 COCOAPODS: 0.26.2

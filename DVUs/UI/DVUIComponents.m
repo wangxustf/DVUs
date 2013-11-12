@@ -16,9 +16,10 @@
         self.layer.cornerRadius = 8;
         self.textAlignment = NSTextAlignmentCenter;
         
-        
         self.text = @"1";
         [self sizeToFit];
+        
+        [UIApplication sharedApplication].statusBarHidden = YES;
     }
     return self;
 }

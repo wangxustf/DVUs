@@ -12,12 +12,18 @@ one more step , more close to the One Piece
   采用xcassets文件组，来管理资源 (这个可以用来做适配)
   UI按照最新标准来重构
   加入了MZDayPicker
+
 ------1110
   fix掉MZDayPicker的bug(内部的tableView位置不对，导致无法点击)，&& 给作者提了issue
   MZDayPicker 用pod来管理 (pod serach query --ios)
-  
 
-------
+------1112
+  加入ocmock，可以用来做一些假数据模拟
+  ----已移除，有好些bug，需要的时候再引入吧 ------加入iconsole，可以用来做真机的debug输出
+  使用AFNetwork，做了DVNetwork，提供了get和post方法，可以满足基本的需要
+  去除可能的依赖
+  引入demain层，分层完毕
+  简单实现Network组件，支持 get post
 ------
 ------
 ------

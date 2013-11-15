@@ -1,11 +1,10 @@
 //
 //  WGS2Mars.h
-//  WGS2Mars
+//  DVTest
 //
-//  Created by 谌启亮 on 12-10-23.
-//  Copyright (c) 2012年 谌启亮. All rights reserved.
+//  Created by psy on 13-11-15.
+//  Copyright (c) 2013年 psy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+void transform(double wgLat, double wgLon,  double *mgLat,  double *mgLon);
 
-void WGS2Mars(double *lat, double *lng);

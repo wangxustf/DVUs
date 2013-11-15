@@ -7,6 +7,7 @@
 //
 
 #import "DVLocationCenter.h"
+#import "WGS2Mars.h"
 
 NSString *const kLocationUpdatedNotification = @"kLocationUpdatedNotification";
 NSString *const kLocationErrorDomain = @"kLocationErrorDomain";
@@ -66,7 +67,12 @@ NSString *const kLocationErrorDomain = @"kLocationErrorDomain";
 }
 
 - (CLLocation*)marsLocFromGPSLoc:(CLLocation*)gpsLocation {
-    return nil;
+    double lat = 0;
+    double lng = 0;
+    
+    transform(gpsLocation.coordinate.latitude, gpsLocation.coordinate.longitude, &lat, &lng);
+    
+    return [[CLLocation alloc] initWithLatitude:lat longitude:lng];
 }
 
 #pragma mark - degate

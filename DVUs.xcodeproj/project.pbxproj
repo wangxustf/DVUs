@@ -13,6 +13,8 @@
 		FE1E84F8182091CD0092C719 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F7182091CD0092C719 /* CFNetwork.framework */; };
 		FE1E84FA182091D20092C719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84F9182091D20092C719 /* CoreData.framework */; };
 		FE1E84FC182091D90092C719 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E84FB182091D90092C719 /* Security.framework */; };
+		FE285FC918366F4F00A67C7D /* DVLocationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE285FC618366F4F00A67C7D /* DVLocationCenter.m */; };
+		FE285FCA18366F4F00A67C7D /* WGS2Mars.m in Sources */ = {isa = PBXBuildFile; fileRef = FE285FC818366F4F00A67C7D /* WGS2Mars.m */; };
 		FE38B7F71807208600614EA1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FE38B7F61807208600614EA1 /* README */; };
 		FE57E529182DDC0400201579 /* iPhone.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE57E528182DDC0400201579 /* iPhone.xcassets */; };
 		FE57E52B182DDF4700201579 /* DevSteps in Resources */ = {isa = PBXBuildFile; fileRef = FE57E52A182DDF4700201579 /* DevSteps */; };
@@ -22,8 +24,6 @@
 		FE9F5ED31831AE2A00176F64 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ED21831AE2A00176F64 /* DataCenter.m */; };
 		FE9F5ED61831AE8B00176F64 /* DVMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F5ED51831AE8B00176F64 /* DVMessageModel.m */; };
 		FEBDDA191835481B00A957DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBDDA181835481B00A957DD /* CoreLocation.framework */; };
-		FEBDDA2018354AE500A957DD /* DVLocationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBDDA1F18354AE500A957DD /* DVLocationCenter.m */; };
-		FEBDDA261835609700A957DD /* WGS2Mars.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBDDA251835609700A957DD /* WGS2Mars.m */; };
 		FEF2B7FC18261FE3005D19E7 /* DVBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */; };
 		FEF2B82518262041005D19E7 /* DVBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B82418262041005D19E7 /* DVBaseModel.m */; };
 		FEF2B8281826206D005D19E7 /* DVBaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2B8271826206D005D19E7 /* DVBaseDAO.m */; };
@@ -79,6 +79,10 @@
 		FE1E84F7182091CD0092C719 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FE1E84F9182091D20092C719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FE1E84FB182091D90092C719 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE285FC518366F4F00A67C7D /* DVLocationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLocationCenter.h; sourceTree = "<group>"; };
+		FE285FC618366F4F00A67C7D /* DVLocationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLocationCenter.m; sourceTree = "<group>"; };
+		FE285FC718366F4F00A67C7D /* WGS2Mars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS2Mars.h; sourceTree = "<group>"; };
+		FE285FC818366F4F00A67C7D /* WGS2Mars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS2Mars.m; sourceTree = "<group>"; };
 		FE38B7F61807208600614EA1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FE38B7F81807231600614EA1 /* DVUs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVUs.entitlements; sourceTree = "<group>"; };
 		FE57E528182DDC0400201579 /* iPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iPhone.xcassets; sourceTree = "<group>"; };
@@ -93,10 +97,6 @@
 		FE9F5ED41831AE8B00176F64 /* DVMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVMessageModel.h; sourceTree = "<group>"; };
 		FE9F5ED51831AE8B00176F64 /* DVMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVMessageModel.m; sourceTree = "<group>"; };
 		FEBDDA181835481B00A957DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		FEBDDA1E18354AE500A957DD /* DVLocationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLocationCenter.h; sourceTree = "<group>"; };
-		FEBDDA1F18354AE500A957DD /* DVLocationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLocationCenter.m; sourceTree = "<group>"; };
-		FEBDDA241835609700A957DD /* WGS2Mars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS2Mars.h; sourceTree = "<group>"; };
-		FEBDDA251835609700A957DD /* WGS2Mars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS2Mars.m; sourceTree = "<group>"; };
 		FEF2B7FA18261FE3005D19E7 /* DVBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseService.h; sourceTree = "<group>"; };
 		FEF2B7FB18261FE3005D19E7 /* DVBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVBaseService.m; sourceTree = "<group>"; };
 		FEF2B82318262041005D19E7 /* DVBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseModel.h; sourceTree = "<group>"; };
@@ -189,6 +189,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE285FC418366F4F00A67C7D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				FE285FC518366F4F00A67C7D /* DVLocationCenter.h */,
+				FE285FC618366F4F00A67C7D /* DVLocationCenter.m */,
+				FE285FC718366F4F00A67C7D /* WGS2Mars.h */,
+				FE285FC818366F4F00A67C7D /* WGS2Mars.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		FE9F5ECD1831ADB900176F64 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,21 +211,10 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		FEBDDA1D18354ABF00A957DD /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				FEBDDA241835609700A957DD /* WGS2Mars.h */,
-				FEBDDA251835609700A957DD /* WGS2Mars.m */,
-				FEBDDA1E18354AE500A957DD /* DVLocationCenter.h */,
-				FEBDDA1F18354AE500A957DD /* DVLocationCenter.m */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
 		FEF2B7F518261F89005D19E7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FEBDDA1D18354ABF00A957DD /* Location */,
+				FE285FC418366F4F00A67C7D /* Location */,
 				FEF2B83918262205005D19E7 /* category */,
 				FEF2B84718262205005D19E7 /* DVTools.h */,
 				FEF2B84818262205005D19E7 /* DVTools.m */,
@@ -633,7 +633,7 @@
 				FEF2B855182622E3005D19E7 /* HomeVC.m in Sources */,
 				FEF2B86718262307005D19E7 /* SettingVC.m in Sources */,
 				FEF2B82518262041005D19E7 /* DVBaseModel.m in Sources */,
-				FEBDDA2018354AE500A957DD /* DVLocationCenter.m in Sources */,
+				FE285FC918366F4F00A67C7D /* DVLocationCenter.m in Sources */,
 				FEF2B85D182622F4005D19E7 /* FriendListVC.m in Sources */,
 				FEF2B864182622FD005D19E7 /* RegisterVC.m in Sources */,
 				FEF2B86D18262320005D19E7 /* DVBaseVC.m in Sources */,
@@ -652,7 +652,7 @@
 				FEF2B863182622FD005D19E7 /* PreviewVC.m in Sources */,
 				FEF2B85E182622F4005D19E7 /* MyActivityListVC.m in Sources */,
 				FEFCFD7E17F1025100881C24 /* main.m in Sources */,
-				FEBDDA261835609700A957DD /* WGS2Mars.m in Sources */,
+				FE285FCA18366F4F00A67C7D /* WGS2Mars.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

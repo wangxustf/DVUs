@@ -17,3 +17,4 @@
 @property (nonatomic,assign)BOOL enableSwipeBack;
 
 @end
+

@@ -27,8 +27,8 @@
             _enableSwipeBack = NO;
         }
     }
-
-    if (!_enableSwipeBack) {
+    
+    if (!_enableSwipeBack){
         return;
     }
     

@@ -24,6 +24,10 @@ one more step , more close to the One Piece
   去除可能的依赖
   引入demain层，分层完毕
   简单实现Network组件，支持 get post
+  
+-------1115
+  引入超级NB的ReactiveCocoa，试用
+
 ------
 ------
 ------

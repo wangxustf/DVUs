@@ -19,22 +19,33 @@ PODS:
   - AFNetworking/Serialization (2.0.2)
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
+  - MBAlertView (1.1.0)
   - MZDayPicker (0.0.5)
   - OCMock (2.2.1)
+  - ReactiveCocoa (2.1.7):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (2.1.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.7)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - MBAlertView (~> 1.1.0)
   - MZDayPicker (~> 0.0.5)
   - OCMock (~> 2.2.1)
+  - ReactiveCocoa (~> 2.1.7)
   - SDWebImage (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  MBAlertView: b966a77a32f2c366e1285ad95998c5187c1dc2ae
   MZDayPicker: 1ebc98a0aa72906dc367de4c5b7d4ddb054bb910
   OCMock: 80e4cfbc71a0e1bd28caf10a9fda27da7c4c8402
+  ReactiveCocoa: 1117f7968c8667d2ca00b5aa47156fabcb56af75
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
 
 COCOAPODS: 0.26.2

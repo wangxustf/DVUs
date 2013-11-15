@@ -33,6 +33,15 @@
     
 //    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapBackground)];
 //    [self.view addGestureRecognizer:tap];
+    UIImage *mm = [UIImage imageNamed:@"map"];
+//    [[UIImage imageNamed:@"map"] ;]
+    
+//    UIImage *mm = [[UIImage imageNamed:@"map"]resizableImageWithCapInsets:UIEdgeInsetsMake(4, 3, 10, 20)];
+    
+    UIImageView *vv = [[UIImageView alloc] initWithImage:mm];
+    vv.frame = CGRectMake(0, 0, 200, 200);
+    [self.view addSubview:vv];
+    vv.center = self.view.center;
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -8,6 +8,14 @@
 
 #import "DVBaseService.h"
 
+#import <CoreLocation/CoreLocation.h>
+
 @implementation DVBaseService
+
+
+- (void)aa {
+    CLLocationManager *m;
+    
+}
 
 @end

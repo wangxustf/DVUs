@@ -41,7 +41,7 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+} 
 
 - (void)onGestureBack {
     [self.navigationController popViewControllerAnimated:YES];
